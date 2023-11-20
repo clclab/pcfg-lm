@@ -1,0 +1,267 @@
+mkdir: cannot create directory 'new_results': File exists
+Thu Jun 15 16:05:28 CEST 2023
+EarleyParser invoked with arguments [-in, data/petrov_mini.txt, -grammar, grammars/1.0_petrov.grammar, -out, new_results/petrov_mini, -verbose, 1, -thread, 32]
+In grammar file = grammars/1.0_petrov.grammar
+# Root symbol = ROOT
+# Objectives = surprisal,stringprob
+# isSparse = false
+# isLogProb = true
+# isScaling = false
+# decodeOpt = 
+# verbose opt = 1
+# Num threads = 32
+# Filter length = 0
+# ioOpt = 
+# maxIteration = 0
+# Input file =data/petrov_mini.txt
+# Need to parse 1
+[walks, He, .]
+# LeftWildcard Edge Space
+
+## Parsing rule data ...  (10000)  (20000)  (30000)  (40000)  (50000)  (60000)  (70000)  (80000)  (90000)  (100000)  (110000)  (120000)  (130000)  (140000)  (150000)  (170000)  (180000)  (190000)  (210000)  (220000)  (240000)  (250000)  (260000)  (270000)  (280000)  (290000)  (300000)  (310000)  (320000)  (330000)  (360000)  (370000)  (380000)  (390000)  (400000)  (410000)  (420000)  (430000)  (440000)  (450000)  (460000)  (470000)  (480000)  (490000)  (500000)  (520000)  (530000)  (540000)  (560000)  (570000)  (580000)  (590000)  (600000)  (610000)  (620000)  (630000)  (640000)  (650000)  (660000)  (680000)  (690000)  (710000)  (720000)  (730000)  (740000)  (750000)  (760000)  (770000)  (780000)  (790000)  (800000)  (810000)  (820000)  (830000)  (840000)  (850000)  (860000)  (870000)  (880000)  (900000)  (910000)  (920000)  (930000)  (940000)  (950000)  (960000)  (970000)  (990000)  (1000000)  (1010000)  (1020000)  (1030000)  (1040000)  (1060000)  (1070000)  (1080000)  (1090000)  (1100000)  (1140000)  (1150000)  (1160000)  (1170000)  (1180000)  (1190000)  (1200000)  (1210000)  (1220000)  (1230000)  (1240000)  (1260000)  (1280000)  (1290000)  (1300000)  (1320000)  (1330000)  (1340000)  (1350000)  (1360000)  (1370000)  (1380000)  (1390000)  (1400000)  (1410000)  (1420000)  (1430000)  (1440000)  (1450000)  (1460000)  (1470000)  (1480000)  (1490000)  (1510000)  (1520000)  (1530000)  (1540000)  (1550000)  (1560000)  (1570000)  (1590000)  (1600000)  (1610000)  (1620000)  (1630000)  (1640000)  (1650000)  (1660000)  (1670000)  (1680000)  (1690000)  (1700000)  (1710000)  (1720000)  (1730000)  (1740000)  (1750000)  (1760000)  (1770000)  (1780000)  (1790000)  (1800000)  (1810000)  (1830000)  (1840000)  (1870000)  (1880000)  (1890000)  (1900000)  (1910000)  (1920000)  (1940000)  (1950000)  (1960000)  (1970000)  (1980000)  (1990000)  (2010000)  (2020000)  (2030000)  (2040000)  (2050000)  (2060000)  (2070000)  (2080000)  (2090000)  (2100000)  (2110000)  (2120000)  (2140000)  (2150000)  (2170000)  (2180000)  (2190000)  (2200000)  (2210000)  (2220000)  (2230000)  (2240000)  (2250000)  (2270000)  (2290000)  (2300000)  (2310000)  (2320000)  (2330000)  (2340000)  (2350000)  (2360000)  (2370000)  (2380000)  (2390000)  (2400000)  (2410000)  (2420000)  (2430000)  (2440000)  (2450000)  (2480000)  (2490000)  (2500000)  (2510000)  (160000)  (340000)  (510000)  (670000)  (980000)  (1110000)  (1270000)  (1500000)  (1580000)  (1820000)  (1850000)  (1930000)  (2260000) 
+# ruleSet 121728
+Num rules = 0, num fragment rules = 0 (num multiple terminal rules = 0). Tag index size = 720, word index size = 54493. done [12.9 sec].
+
+## Setting up edge space ...  (10000)  (20000)  (30000)  (40000)  (50000)  (60000)  (70000)  (80000)  (90000)  (100000)  (110000)  (120000) Num rules=121582, state space size=143115. done [0.3 sec].
+
+### Learning grammar ... 
+
+# Construct left-corner relation matrix 311 x 311
+ (10000)  (20000)  (30000)  (40000)  (50000)  (60000)  (70000)  (80000)  (90000) Done! Num rules processed =93773 Time elapsed: 121 ms
+
+# Building left-corner closure matrix...
+  num rows=311, num non-zero rows=301
+ (10)  (20)  (30)  (40)  (50)  (60)  (70)  (80)  (90)  (100)  (110)  (120)  (130)  (140)  (150)  (160)  (170)  (180)  (190)  (200)  (210)  (220)  (230)  (240)  (250)  (260)  (270)  (280)  (290)  (300) Done=! Time elapsed: 1465 ms
+
+# Construct unit-production relation matrix 720 x 720
+ (100)  (200)  (300)  (400)  (500)  (600)  (700)  (800)  (900)  (1000)  (1100)  (1200)  (1300)  (1400)  (1500)  (1600)  (1700)  (1800)  (1900)  (2000)  (2100)  (2200)  (2300)  (2400)  (2500)  (2600)  (2700)  (2800)  (2900)  (3000)  (3100)  (3200)  (3300)  (3400)  (3500)  (3600)  (3700)  (3800)  (3900)  (4000)  (4100)  (4200)  (4300)  (4400)  (4500)  (4600)  (4700)  (4800)  (4900)  (5000)  (5100)  (5200)  (5300)  (5400)  (5500)  (5600)  (5700)  (5800)  (5900)  (6000)  (6100)  (6200)  (6300)  (6400) Done! Num unary rules=6495 Time elapsed: 25 ms
+
+# Building unary closure matrix...
+  num rows=720, num non-zero rows=148
+ (10)  (20)  (30)  (40)  (50)  (60)  (70)  (80)  (90)  (100)  (110)  (120)  (130)  (140) Done=! Time elapsed: 1203 ms
+
+# Processing extended rules ... ... Num extended rules=0, tag index size =720, word index size = 54493 done [0.0 sec].
+
+## Constructing predictions ... 121582 ...  (10000)  (20000)  (30000)  (40000)  (50000)  (60000)  (70000)  (80000)  (90000)  (100000)  (110000)  (120000) # Constructing complete predictions ...
+142395
+ (0)  (10000)  (20000)  (30000)  (40000)  (50000)  (60000)  (70000)  (80000)  (90000)  (100000)  (110000)  (120000)  (130000)  (140000) Done! Total predictions=32487598, num nonterminals with predictions=301 done [3.6 sec].
+
+## Constructing completions ...  (0)  (10000)  (20000)  (30000)  (40000)  (50000)  (60000)  (70000)  (80000)  (90000)  (100000)  (110000)  (120000)  (130000)  (140000) Done with completion Time elapsed: 68314 ms
+! Done building grammar. Time elapsed: 0 ms
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+## Parsing sent 0: [He, walks, .]
+# 1	He,  numTags=1
+# Scanning [0, 1]: PRP_0->[He] : 0.21707455390900002
+# He, finished chartComplete Time elapsed: 119 ms
+# He, finished chartPredict Time elapsed: 10076 ms
+[He]
+prefix: 0.041635516396623544
+surprisal: 3.178801716426067
+stringprob: 6.433713188160877E-10
+# 2	walks,  numTags=118
+# Scanning [1, 2]: VBZ_16->[walks] : 0.0011984287199999998
+# Scanning [1, 2]: VB_2->[walks] : 1.4032249999999992E-6
+# Scanning [1, 2]: NNS_19->[walks] : 4.8026660000000035E-6
+# Scanning [1, 2]: RB_12->[walks] : 2.44589E-7
+# Scanning [1, 2]: JJ_26->[walks] : 6.475509999999999E-7
+# Scanning [1, 2]: NNS_18->[walks] : 4.758836E-6
+# Scanning [1, 2]: NN_7->[walks] : 5.875999999999998E-7
+# Scanning [1, 2]: NNS_22->[walks] : 5.054689E-6
+# Scanning [1, 2]: RB_2->[walks] : 2.456389999999999E-7
+# Scanning [1, 2]: JJ_29->[walks] : 6.309559999999999E-7
+# Scanning [1, 2]: NNP_15->[walks] : 2.817156000000001E-6
+# Scanning [1, 2]: JJ_16->[walks] : 6.218160000000001E-7
+# Scanning [1, 2]: NNP_13->[walks] : 2.8189650000000014E-6
+# Scanning [1, 2]: VB_4->[walks] : 1.3979639999999994E-6
+# Scanning [1, 2]: NNP_11->[walks] : 3.78841605E-4
+# Scanning [1, 2]: VB_1->[walks] : 1.4143769999999997E-6
+# Scanning [1, 2]: JJ_23->[walks] : 6.205510000000004E-7
+# Scanning [1, 2]: NN_16->[walks] : 3.0541650000000017E-6
+# Scanning [1, 2]: NNP_2->[walks] : 2.8148200000000015E-6
+# Scanning [1, 2]: VB_15->[walks] : 1.3938030000000008E-6
+# Scanning [1, 2]: NNP_4->[walks] : 2.8181139999999984E-6
+# Scanning [1, 2]: NN_13->[walks] : 6.036590000000003E-7
+# Scanning [1, 2]: NN_17->[walks] : 3.0648889999999974E-6
+# Scanning [1, 2]: NNS_26->[walks] : 7.287555999999999E-6
+# Scanning [1, 2]: NNP_7->[walks] : 2.8186630000000007E-6
+# Scanning [1, 2]: NNS_13->[walks] : 1.695875739999999E-4
+# Scanning [1, 2]: NN_5->[walks] : 5.828890000000005E-6
+# Scanning [1, 2]: NN_15->[walks] : 3.055894E-6
+# Scanning [1, 2]: NNS_17->[walks] : 4.7399850000000035E-6
+# Scanning [1, 2]: NNS_11->[walks] : 4.8398519999999995E-6
+# Scanning [1, 2]: NN_10->[walks] : 6.187800000000002E-7
+# Scanning [1, 2]: RB_13->[walks] : 2.443239999999999E-7
+# Scanning [1, 2]: VBZ_12->[walks] : 0.050423242178000004
+# Scanning [1, 2]: NNS_24->[walks] : 4.750490000000002E-6
+# Scanning [1, 2]: RB_4->[walks] : 2.7998903999999985E-5
+# Scanning [1, 2]: NNP_3->[walks] : 2.8130139999999995E-6
+# Scanning [1, 2]: NNS_16->[walks] : 5.058065000000003E-6
+# Scanning [1, 2]: NNP_6->[walks] : 2.8195069999999986E-6
+# Scanning [1, 2]: VB_14->[walks] : 1.3936929999999993E-6
+# Scanning [1, 2]: VB_7->[walks] : 1.4004569999999994E-6
+# Scanning [1, 2]: JJ_28->[walks] : 6.208949999999997E-7
+# Scanning [1, 2]: VBZ_19->[walks] : 6.645917969999999E-4
+# Scanning [1, 2]: NNP_14->[walks] : 3.111548E-6
+# Scanning [1, 2]: NN_0->[walks] : 6.346130000000002E-7
+# Scanning [1, 2]: VBZ_17->[walks] : 0.0017425885990000004
+# Scanning [1, 2]: VBZ_15->[walks] : 0.0010282717400000002
+# Scanning [1, 2]: VB_11->[walks] : 1.3946280000000007E-6
+# Scanning [1, 2]: VB_0->[walks] : 1.4012019999999999E-6
+# Scanning [1, 2]: NN_9->[walks] : 5.898089999999996E-7
+# Scanning [1, 2]: NN_4->[walks] : 3.7907091E-5
+# Scanning [1, 2]: VB_10->[walks] : 1.39383E-6
+# Scanning [1, 2]: RB_6->[walks] : 3.651429999999998E-7
+# Scanning [1, 2]: RB_7->[walks] : 2.547000000000001E-7
+# Scanning [1, 2]: JJ_17->[walks] : 6.196979999999998E-7
+# Scanning [1, 2]: NN_24->[walks] : 3.5333130000000024E-6
+# Scanning [1, 2]: VB_12->[walks] : 1.4001430000000007E-6
+# Scanning [1, 2]: VB_13->[walks] : 1.3935639999999989E-6
+# Scanning [1, 2]: NNS_25->[walks] : 4.712763039999998E-4
+# Scanning [1, 2]: RB_8->[walks] : 2.49094E-7
+# Scanning [1, 2]: NN_8->[walks] : 5.873500000000005E-7
+# Scanning [1, 2]: NN_3->[walks] : 6.10932E-7
+# Scanning [1, 2]: VBZ_10->[walks] : 0.002022495642
+# Scanning [1, 2]: NN_27->[walks] : 3.0569639999999974E-6
+# Scanning [1, 2]: VBZ_14->[walks] : 0.001050230289
+# Scanning [1, 2]: NNS_23->[walks] : 4.765018999999998E-6
+# Scanning [1, 2]: JJ_31->[walks] : 6.291219999999996E-7
+# Scanning [1, 2]: NNS_12->[walks] : 4.952755999999999E-6
+# Scanning [1, 2]: RB_5->[walks] : 4.949219999999996E-7
+# Scanning [1, 2]: NNP_12->[walks] : 2.812051999999998E-6
+# Scanning [1, 2]: VBZ_18->[walks] : 0.001074290623
+# Scanning [1, 2]: NN_21->[walks] : 3.214993000000002E-6
+# Scanning [1, 2]: NNS_21->[walks] : 5.800746000000003E-6
+# Scanning [1, 2]: NNP_0->[walks] : 2.811103999999999E-6
+# Scanning [1, 2]: JJ_24->[walks] : 8.349705999999995E-5
+# Scanning [1, 2]: NN_20->[walks] : 3.3780180000000027E-6
+# Scanning [1, 2]: RB_9->[walks] : 2.480569999999999E-7
+# Scanning [1, 2]: NN_19->[walks] : 3.0738540000000025E-6
+# Scanning [1, 2]: NNS_20->[walks] : 4.809739000000003E-6
+# Scanning [1, 2]: NNS_14->[walks] : 4.761627000000003E-6
+# Scanning [1, 2]: VBZ_11->[walks] : 6.369463899999997E-4
+# Scanning [1, 2]: RB_3->[walks] : 2.4404699999999983E-7
+# Scanning [1, 2]: NN_14->[walks] : 3.060037499999999E-5
+# Scanning [1, 2]: RB_10->[walks] : 2.440610000000001E-7
+# Scanning [1, 2]: NNP_5->[walks] : 2.816279000000001E-6
+# Scanning [1, 2]: RB_0->[walks] : 3.142699999999998E-7
+# Scanning [1, 2]: JJ_21->[walks] : 6.200429999999998E-7
+# Scanning [1, 2]: NNP_9->[walks] : 2.8205479999999987E-6
+# Scanning [1, 2]: NN_28->[walks] : 3.0858730000000003E-6
+# Scanning [1, 2]: NNS_15->[walks] : 4.757490000000002E-6
+# Scanning [1, 2]: NN_22->[walks] : 3.2142129999999973E-6
+# Scanning [1, 2]: NN_2->[walks] : 1.1257429999999994E-6
+# Scanning [1, 2]: NN_11->[walks] : 5.887270000000004E-7
+# Scanning [1, 2]: NN_25->[walks] : 3.6679659999999998E-6
+# Scanning [1, 2]: JJ_27->[walks] : 7.182860000000002E-7
+# Scanning [1, 2]: NN_18->[walks] : 3.055209000000001E-6
+# Scanning [1, 2]: JJ_20->[walks] : 6.299220000000005E-7
+# Scanning [1, 2]: VBZ_13->[walks] : 0.0011705404219999997
+# Scanning [1, 2]: JJ_30->[walks] : 6.209689999999995E-7
+# Scanning [1, 2]: JJ_22->[walks] : 6.194839999999997E-7
+# Scanning [1, 2]: VB_3->[walks] : 1.2490311899999995E-4
+# Scanning [1, 2]: VB_6->[walks] : 6.455436400000004E-5
+# Scanning [1, 2]: JJ_18->[walks] : 6.232689999999996E-7
+# Scanning [1, 2]: VB_5->[walks] : 1.3939859999999997E-6
+# Scanning [1, 2]: NNP_1->[walks] : 2.8147689999999974E-6
+# Scanning [1, 2]: VBZ_9->[walks] : 6.49382173E-4
+# Scanning [1, 2]: VB_9->[walks] : 1.3941600000000011E-6
+# Scanning [1, 2]: JJ_19->[walks] : 6.195929999999996E-7
+# Scanning [1, 2]: VB_8->[walks] : 1.3938439999999998E-6
+# Scanning [1, 2]: NN_1->[walks] : 7.763129999999994E-7
+# Scanning [1, 2]: RB_1->[walks] : 2.4404499999999993E-7
+# Scanning [1, 2]: RB_11->[walks] : 3.4928599999999997E-7
+# Scanning [1, 2]: JJ_25->[walks] : 6.302159999999996E-7
+# Scanning [1, 2]: NN_6->[walks] : 5.906769999999995E-7
+# Scanning [1, 2]: NN_23->[walks] : 3.5542590200000006E-4
+# Scanning [1, 2]: NNP_10->[walks] : 2.8354570000000014E-6
+# Scanning [1, 2]: NN_26->[walks] : 3.059041000000001E-6
+# Scanning [1, 2]: NNP_8->[walks] : 2.8196769999999986E-6
+# Scanning [1, 2]: NN_12->[walks] : 5.921569999999995E-7
+# walks, finished chartComplete Time elapsed: 1129 ms
+# walks, finished chartPredict Time elapsed: 32805 ms
+[He, walks]
+prefix: 8.49826790910167E-6
+surprisal: 8.496846474206768
+stringprob: 5.541142649033529E-11
+# 3	.,  numTags=27
+# Scanning [2, 3]: VB_24->[.] : 4.2781699999999996E-6
+# Scanning [2, 3]: VBZ_12->[.] : 1.0403673999999994E-5
+# Scanning [2, 3]: VBZ_16->[.] : 9.146565859999996E-4
+# Scanning [2, 3]: VBZ_11->[.] : 1.0403714999999994E-5
+# Scanning [2, 3]: VB_23->[.] : 4.284670999999996E-6
+# Scanning [2, 3]: VB_21->[.] : 4.2779749999999995E-6
+# Scanning [2, 3]: VBZ_13->[.] : 1.0411361999999993E-5
+# Scanning [2, 3]: VBZ_10->[.] : 1.0411620999999994E-5
+# Scanning [2, 3]: VBZ_14->[.] : 1.0399634000000004E-5
+# Scanning [2, 3]: VB_26->[.] : 4.277345000000001E-6
+# Scanning [2, 3]: VB_17->[.] : 4.2775530000000035E-6
+# Scanning [2, 3]: DOT_2->[.] : 0.05644724116600001
+# Scanning [2, 3]: VB_25->[.] : 4.282991999999998E-6
+# Scanning [2, 3]: VB_18->[.] : 4.23724481E-4
+# Scanning [2, 3]: DOT_1->[.] : 0.098198269253
+# Scanning [2, 3]: VBZ_19->[.] : 1.0398054999999993E-5
+# Scanning [2, 3]: VBZ_9->[.] : 1.0397154000000004E-5
+# Scanning [2, 3]: VB_19->[.] : 4.277498999999997E-6
+# Scanning [2, 3]: VB_22->[.] : 4.2775749999999994E-6
+# Scanning [2, 3]: VB_20->[.] : 4.277191999999998E-6
+# Scanning [2, 3]: VB_16->[.] : 4.407467000000001E-6
+# Scanning [2, 3]: VBZ_18->[.] : 1.0393573999999995E-5
+# Scanning [2, 3]: VBZ_17->[.] : 3.217930599999999E-5
+# Scanning [2, 3]: DOT_0->[.] : 0.997964348716
+# Scanning [2, 3]: VBZ_15->[.] : 1.0403010999999999E-5
+# Scanning [2, 3]: FW_0->[.] : 0.0025937589009999997
+# Scanning [2, 3]: VB_27->[.] : 4.2805700000000014E-6
+# ., finished chartComplete Time elapsed: 3467 ms
+# ., finished chartPredict Time elapsed: 33721 ms
+[He, walks, .]
+prefix: 1.6703375884046915E-8
+surprisal: 6.232006798574847
+stringprob: 1.668928265796206E-8
+Finished parsing sentence 0. [He, walks, .]. Num words = 3, negLogProb=17.908499080546136. Time elapsed: 8 ms
+Thu Jun 15 16:08:20 CEST 2023
+
+JOB STATISTICS
+==============
+Job ID: 2920999
+Cluster: snellius
+User/Group: jumelet/jumelet
+State: RUNNING
+Nodes: 1
+Cores per node: 128
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 06:30:24 core-walltime
+Job Wall-clock time: 00:03:03
+Memory Utilized: 0.00 MB (estimated maximum)
+Memory Efficiency: 0.00% of 8.00 GB (8.00 GB/node)
+WARNING: Efficiency statistics may be misleading for RUNNING jobs.

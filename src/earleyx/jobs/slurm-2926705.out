@@ -1,0 +1,1487 @@
+mkdir: cannot create directory 'new_results': File exists
+Fri Jun 16 12:31:14 CEST 2023
+EarleyParser invoked with arguments [-in, data/eval_subset_100.txt, -grammar, grammars/1.0_petrov.grammar, -out, new_results/eval_subset_100, -verbose, 1, -thread, 4]
+In grammar file = grammars/1.0_petrov.grammar
+# Root symbol = ROOT
+# Objectives = surprisal,stringprob
+# isSparse = false
+# isLogProb = true
+# isScaling = false
+# decodeOpt = 
+# verbose opt = 1
+# Num threads = 4
+# Filter length = 0
+# ioOpt = 
+# maxIteration = 0
+# Input file =data/eval_subset_100.txt
+# Need to parse 100
+[``, been, Easy, year, Katherine, Much, Samantha, boys, your, without, building, shrugged, these, path, blacksmith, would, Simon, poor, because, ablaze, you, safely, sister, !, Maybe, sure, younger, impact, opportunity, *, ,, am, easy, ., Ruth, Here, B4, as, smiled, at, size, ;, much, pony, ?, wind, sweetly, deal, be, vantage, least, I, turn, Paul, eyes, The, rolling, As, At, extinction, grass, blocking, by, after, aggressive, close, hand, `, a, flanked, words, eating, the, tells, weird, touches, descent, lips, calling, unprecedented, Your, Yeah, eyed, returned, yours, freely, did, citizens, Again, ensconced, do, girls, down, She, leave, rare, tall, others, Circle, fantasy, need, finally, For, muttered, its, Do, upwards, onto, gone, she, never, ex, aside, Luis, acres, stared, some, tears, respecting, for, back, ride, watching, cheering, sheets, Scarlett, Stolz, duel, Rick, passed, just, live, responded, notice, over, six, go, agencies, Although, toyed, kept, room, taunted, with, there, sweat, Joey, he, very, slightly, smaller, focus, hope, bit, attempt, soon, relish, thanks, myth, heroes, grinned, struck, beside, spatial, He, if, similar, Everyone, shape, in, made, is, it, gravel, Some, driver, etc., contents, even, Aria, gave, Miriam, If, women, become, Finally, engaged, other, woman, brought, In, painted, payments, It, air, thinking, <apostrophe>ll, stream, too, have, climbed, everything, together, elegant, side, James, seemed, could, forward, knew, off, Considering, scaffold, disable, witch, Trinity, use, several, smile, that, earlier, Lights, find, Doors, me, intense, all, already, everyone, However, less, Amy, my, heart, friends, And, were, no, kissed, Any, around, running, head, and, of, troubled, met, heard, fight, direction, on, freaking, No, or, any, followed, suggested, Let, <apostrophe><apostrophe>, On, reason, silently, thought, about, Beth, buried, stood, danger, decided, beautiful, worked, extremely, Knightly, pounds, Then, let, boil, they, sandbar, Spartan, night, them, then, pack, each, horse, pointed, eye, waved, gently, Pox, Mess, circle, Bethany, shower, maybe, collapsed, another, killing, two, long, moment, serving, into, are, managed, taken, Under, where, stirred, demonstrating, situation, surprised, kids, But, necessary, slang, one, noticed, black, team, services, many, people, ..., closer, They, detectable, such, Calvin, Kitsune, dealer, closed, to, knelt, thing, Actually, Duncan, story, but, till, swung, had, gleaming, inside, mother, shook, late, There, This, has, up, Look, us, demeanor, smiling, suitcase, last, might, felt, this, whisk, look, Amanda, These, Now, know, Up, loudly, doing, away, figures, needed, amphibious, nearly, apron, banish, surroundings, house, we, life, shot, anything, sorceress, weapon, not, Michel, summoned, now, themselves, throughout, every, early, hours, green, wan, center, again, was, start, yet, We, Tuck, pair, mouth, what, Her, Every, ones, step, risk, time, Come, Blake, palm, fable, when, beyond, S??, humor, her, enter, case, softness, still, shuttled, overhead, bewildered, Captain, light, anyone, among, following, ladies, boss, artist, guard, our, confirmed, out, throwing, uniform, confess, fall, get, sentenced, <apostrophe>, dark, theme, protect, <apostrophe>s, grin, barrel, desire, spat, bigger, <apostrophe>m, continued, Doctor, <apostrophe>d, kill, clicked, lead, nice, lots, help, shirt, His, gasping, facility, uselessly, first, voice, small, <apostrophe>ve, door, before, sound, tell, Central, used, him, Cobras, his, only, should, few, goodnight, from, like, failed, towards, water, most, toilets, person, ample, n<apostrophe>t, job, here, their, radiant, relaxed, holding, can, alone, Gracie, said, unbelievable, rest, mocked, will, studied, ink, saw, groups, also, leans, really, spread, grimace, Convention, round, build, mean, edged, lectured, front, hurry, You]
+# LeftWildcard Edge Space
+
+## Parsing rule data ...  (10000)  (20000)  (30000)  (40000)  (50000)  (60000)  (70000)  (80000)  (90000)  (100000)  (110000)  (120000)  (130000)  (140000)  (150000)  (170000)  (180000)  (190000)  (210000)  (220000)  (240000)  (250000)  (260000)  (270000)  (280000)  (290000)  (300000)  (310000)  (320000)  (330000)  (360000)  (370000)  (380000)  (390000)  (400000)  (410000)  (420000)  (430000)  (440000)  (450000)  (460000)  (470000)  (480000)  (490000)  (500000)  (520000)  (530000)  (540000)  (560000)  (570000)  (580000)  (590000)  (600000)  (610000)  (620000)  (630000)  (640000)  (650000)  (660000)  (680000)  (690000)  (710000)  (720000)  (730000)  (740000)  (750000)  (760000)  (770000)  (780000)  (790000)  (800000)  (810000)  (820000)  (830000)  (840000)  (850000)  (860000)  (870000)  (880000)  (900000)  (910000)  (920000)  (930000)  (940000)  (950000)  (960000)  (970000)  (990000)  (1000000)  (1010000)  (1020000)  (1030000)  (1040000)  (1060000)  (1070000)  (1080000)  (1090000)  (1100000)  (1140000)  (1150000)  (1160000)  (1170000)  (1180000)  (1190000)  (1200000)  (1210000)  (1220000)  (1230000)  (1240000)  (1260000)  (1280000)  (1290000)  (1300000)  (1320000)  (1330000)  (1340000)  (1350000)  (1360000)  (1370000)  (1380000)  (1390000)  (1400000)  (1410000)  (1420000)  (1430000)  (1440000)  (1450000)  (1460000)  (1470000)  (1480000)  (1490000)  (1510000)  (1520000)  (1530000)  (1540000)  (1550000)  (1560000)  (1570000)  (1590000)  (1600000)  (1610000)  (1620000)  (1630000)  (1640000)  (1650000)  (1660000)  (1670000)  (1680000)  (1690000)  (1700000)  (1710000)  (1720000)  (1730000)  (1740000)  (1750000)  (1760000)  (1770000)  (1780000)  (1790000)  (1800000)  (1810000)  (1830000)  (1840000)  (1870000)  (1880000)  (1890000)  (1900000)  (1910000)  (1920000)  (1940000)  (1950000)  (1960000)  (1970000)  (1980000)  (1990000)  (2010000)  (2020000)  (2030000)  (2040000)  (2050000)  (2060000)  (2070000)  (2080000)  (2090000)  (2100000)  (2110000)  (2120000)  (2140000)  (2150000)  (2170000)  (2180000)  (2190000)  (2200000)  (2210000)  (2220000)  (2230000)  (2240000)  (2250000)  (2270000)  (2290000)  (2300000)  (2310000)  (2320000)  (2330000)  (2340000)  (2350000)  (2360000)  (2370000)  (2380000)  (2390000)  (2400000)  (2410000)  (2420000)  (2430000)  (2440000)  (2450000)  (2480000)  (2490000)  (2500000)  (2510000)  (160000)  (200000)  (230000)  (340000)  (350000)  (510000)  (550000)  (670000)  (700000)  (890000)  (980000)  (1050000)  (1110000)  (1120000)  (1130000)  (1250000)  (1270000)  (1310000)  (1500000)  (1580000)  (1820000)  (1850000)  (1860000)  (1930000)  (2000000)  (2130000)  (2160000)  (2260000)  (2280000)  (2460000)  (2470000) 
+# ruleSet 318763
+Num rules = 0, num fragment rules = 0 (num multiple terminal rules = 0). Tag index size = 720, word index size = 54493. done [14.8 sec].
+
+## Setting up edge space ...  (10000)  (20000)  (30000)  (40000)  (50000)  (60000)  (70000)  (80000)  (90000)  (100000)  (110000)  (120000)  (130000)  (140000)  (150000)  (160000)  (170000)  (180000)  (190000)  (200000)  (210000)  (220000)  (230000)  (240000)  (250000)  (260000)  (270000)  (280000) Num rules=284707, state space size=319812. done [0.7 sec].
+
+### Learning grammar ... 
+
+# Construct left-corner relation matrix 311 x 311
+ (10000)  (20000)  (30000)  (40000)  (50000)  (60000)  (70000)  (80000)  (90000)  (100000)  (110000)  (120000)  (130000) Done! Num rules processed =131684 Time elapsed: 188 ms
+
+# Building left-corner closure matrix...
+  num rows=311, num non-zero rows=306
+ (10)  (20)  (30)  (40)  (50)  (60)  (70)  (80)  (90)  (100)  (110)  (120)  (130)  (140)  (150)  (160)  (170)  (180)  (190)  (200)  (210)  (220)  (230)  (240)  (250)  (260)  (270)  (280)  (290)  (300) Done=! Time elapsed: 1502 ms
+
+# Construct unit-production relation matrix 720 x 720
+ (100)  (200)  (300)  (400)  (500)  (600)  (700)  (800)  (900)  (1000)  (1100)  (1200)  (1300)  (1400)  (1500)  (1600)  (1700)  (1800)  (1900)  (2000)  (2100)  (2200)  (2300)  (2400)  (2500)  (2600)  (2700)  (2800)  (2900)  (3000)  (3100)  (3200)  (3300)  (3400)  (3500)  (3600)  (3700)  (3800)  (3900)  (4000)  (4100)  (4200)  (4300)  (4400)  (4500)  (4600)  (4700)  (4800)  (4900)  (5000)  (5100)  (5200)  (5300)  (5400)  (5500)  (5600)  (5700)  (5800)  (5900)  (6000)  (6100)  (6200)  (6300)  (6400)  (6500)  (6600)  (6700)  (6800)  (6900)  (7000)  (7100)  (7200)  (7300)  (7400)  (7500)  (7600)  (7700)  (7800)  (7900)  (8000)  (8100)  (8200)  (8300)  (8400)  (8500)  (8600)  (8700)  (8800)  (8900)  (9000)  (9100)  (9200)  (9300)  (9400)  (9500)  (9600)  (9700)  (9800)  (9900)  (10000)  (10100)  (10200)  (10300)  (10400)  (10500)  (10600)  (10700)  (10800)  (10900)  (11000)  (11100)  (11200)  (11300)  (11400)  (11500)  (11600)  (11700)  (11800)  (11900)  (12000)  (12100)  (12200)  (12300)  (12400)  (12500)  (12600)  (12700)  (12800)  (12900)  (13000)  (13100)  (13200) Done! Num unary rules=13295 Time elapsed: 52 ms
+
+# Building unary closure matrix...
+  num rows=720, num non-zero rows=159
+ (10)  (20)  (30)  (40)  (50)  (60)  (70)  (80)  (90)  (100)  (110)  (120)  (130)  (140)  (150) Done=! Time elapsed: 1578 ms
+
+# Processing extended rules ... ... Num extended rules=0, tag index size =720, word index size = 54493 done [0.0 sec].
+
+## Constructing predictions ... 284707 ...  (10000)  (20000)  (30000)  (40000)  (50000)  (60000)  (70000)  (80000)  (90000)  (100000)  (110000)  (120000)  (130000)  (140000)  (150000)  (160000)  (170000)  (180000)  (190000)  (200000)  (210000)  (220000)  (230000)  (240000)  (250000)  (260000)  (270000)  (280000) # Constructing complete predictions ...
+319092
+ (0)  (10000)  (20000)  (30000)  (40000)  (50000)  (60000)  (70000)  (80000)  (90000)  (100000)  (110000)  (120000)  (130000)  (140000)  (150000)  (160000)  (170000)  (180000)  (190000)  (200000)  (210000)  (220000)  (230000)  (240000)  (250000)  (260000)  (270000)  (280000)  (290000)  (300000)  (310000) Done! Total predictions=80582555, num nonterminals with predictions=309 done [7.5 sec].
+
+## Constructing completions ...  (0)  (10000)  (20000)  (30000)  (40000)  (50000)  (60000)  (70000)  (80000)  (90000)  (100000)  (110000)  (120000)  (130000)  (140000)  (150000)  (160000)  (170000)  (180000)  (190000)  (200000)  (210000)  (220000)  (230000)  (240000)  (250000)  (260000)  (270000)  (280000)  (290000)  (300000)  (310000) Done with completion Time elapsed: 253069 ms
+! Done building grammar. Time elapsed: 0 ms
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+# EarleyParserDense
+## Parsing sent 1: [The, horse, had, taken, in, weird, .]
+## Parsing sent 3: [I, taunted, them, ;, I, seemed, .]
+## Parsing sent 0: [She, <apostrophe>d, get, to, whisk, earlier, at, the, back, .]
+## Parsing sent 2: [The, others, she, decided, to, do, that, person, stared, At, his, ample, of, James, edged, rolling, .]
+# 1	The,  numTags=49
+# 1	The,  numTags=49
+# 1	She,  numTags=31
+# 1	I,  numTags=97
+# Scanning [0, 1]: NNP_14->[I] : 9.369643639999998E-4
+# Scanning [0, 1]: VBG_22->[I] : 1.0495499999999998E-6
+# Scanning [0, 1]: JJ_28->[I] : 6.55589E-7
+# Scanning [0, 1]: NNP_22->[I] : 1.0411935000000007E-5
+# Scanning [0, 1]: NN_4->[I] : 5.552279500000003E-5
+# Scanning [0, 1]: NN_9->[I] : 6.340956999999997E-5
+# Scanning [0, 1]: CD_6->[I] : 9.901715109999999E-4
+# Scanning [0, 1]: NN_0->[I] : 1.988646860000001E-4
+# Scanning [0, 1]: NN_10->[I] : 6.559865899999996E-5
+# Scanning [0, 1]: NNP_26->[I] : 1.0297680000000007E-5
+# Scanning [0, 1]: NN_15->[I] : 0.002061808657000001
+# Scanning [0, 1]: VBG_16->[I] : 1.0500389999999997E-6
+# Scanning [0, 1]: VBG_13->[I] : 1.0501739999999998E-6
+# Scanning [0, 1]: NNP_6->[I] : 0.001365649648
+# Scanning [0, 1]: NNP_3->[I] : 0.11395695874899998
+# Scanning [0, 1]: NN_13->[I] : 7.659071179999997E-4
+# Scanning [0, 1]: CD_3->[I] : 2.3741722000000007E-5
+# Scanning [0, 1]: NNP_4->[I] : 0.0010214878849999997
+# Scanning [0, 1]: VBG_20->[I] : 1.0487389999999994E-6
+# Scanning [0, 1]: PRP_1->[I] : 0.195492935114
+# Scanning [0, 1]: NNP_23->[I] : 2.279946400000001E-5
+# Scanning [0, 1]: NNP_2->[I] : 0.0023311286429999996
+# Scanning [0, 1]: NNP_25->[I] : 1.0304358000000004E-5
+# Scanning [0, 1]: NN_16->[I] : 9.804850299999999E-5
+# Scanning [0, 1]: JJ_23->[I] : 6.522689999999999E-7
+# Scanning [0, 1]: NNP_16->[I] : 1.0310478000000004E-5
+# Scanning [0, 1]: NN_5->[I] : 9.772917799999992E-5
+# Scanning [0, 1]: NNP_7->[I] : 0.0028065616699999994
+# Scanning [0, 1]: NN_17->[I] : 0.002364818081000001
+# Scanning [0, 1]: JJ_29->[I] : 6.569809999999997E-7
+# Scanning [0, 1]: CD_4->[I] : 1.6534049000000002E-5
+# Scanning [0, 1]: NN_7->[I] : 0.0018963468520000006
+# Scanning [0, 1]: JJ_26->[I] : 6.54406E-7
+# Scanning [0, 1]: NNP_19->[I] : 1.0318277E-5
+# Scanning [0, 1]: NNP_11->[I] : 9.433029389999999E-4
+# Scanning [0, 1]: CD_5->[I] : 7.059323570000001E-4
+# Scanning [0, 1]: NNP_13->[I] : 9.121395469999999E-4
+# Scanning [0, 1]: JJ_16->[I] : 6.530760000000004E-7
+# Scanning [0, 1]: VBG_14->[I] : 1.0502080000000006E-6
+# Scanning [0, 1]: NNP_15->[I] : 9.183726709999999E-4
+# Scanning [0, 1]: CD_2->[I] : 2.561963000000002E-5
+# Scanning [0, 1]: JJ_19->[I] : 6.524820000000001E-7
+# Scanning [0, 1]: NNP_1->[I] : 0.0011737126740000005
+# Scanning [0, 1]: JJ_18->[I] : 6.525800000000005E-7
+# Scanning [0, 1]: NNP_8->[I] : 0.0030515425459999987
+# Scanning [0, 1]: NN_12->[I] : 9.615123000000005E-5
+# Scanning [0, 1]: NN_26->[I] : 8.881459299999997E-5
+# Scanning [0, 1]: NNP_10->[I] : 9.369935120000003E-4
+# Scanning [0, 1]: NN_23->[I] : 1.0621604299999991E-4
+# Scanning [0, 1]: JJ_25->[I] : 6.531629999999997E-7
+# Scanning [0, 1]: NN_6->[I] : 4.573653300000001E-5
+# Scanning [0, 1]: CD_7->[I] : 0.002826946071000001
+# Scanning [0, 1]: NN_1->[I] : 5.209865399999996E-5
+# Scanning [0, 1]: NNP_18->[I] : 1.032511900000001E-5
+# Scanning [0, 1]: VBG_21->[I] : 1.0495320000000003E-6
+# Scanning [0, 1]: NN_22->[I] : 2.313693430000002E-4
+# Scanning [0, 1]: NN_2->[I] : 4.989508569999999E-4
+# Scanning [0, 1]: VBG_18->[I] : 9.443437999999996E-5
+# Scanning [0, 1]: NN_28->[I] : 1.1092350599999994E-4
+# Scanning [0, 1]: JJ_21->[I] : 6.542260000000001E-7
+# Scanning [0, 1]: NNP_9->[I] : 0.001748035241
+# Scanning [0, 1]: NNP_5->[I] : 0.0025444234250000006
+# Scanning [0, 1]: NN_14->[I] : 6.152191549999999E-4
+# Scanning [0, 1]: NNP_24->[I] : 2.0676007600000008E-4
+# Scanning [0, 1]: JJ_22->[I] : 6.522309999999999E-7
+# Scanning [0, 1]: JJ_30->[I] : 8.808240499999993E-5
+# Scanning [0, 1]: PRP_2->[I] : 0.024947588318
+# Scanning [0, 1]: JJ_20->[I] : 6.526710000000003E-7
+# Scanning [0, 1]: PRP_0->[I] : 0.3188829413989999
+# Scanning [0, 1]: CD_0->[I] : 2.0706872999999986E-5
+# Scanning [0, 1]: VBG_19->[I] : 1.064818E-6
+# Scanning [0, 1]: NN_25->[I] : 9.548208600000001E-5
+# Scanning [0, 1]: JJ_27->[I] : 6.532950000000005E-7
+# Scanning [0, 1]: NN_18->[I] : 1.0114894999999996E-4
+# Scanning [0, 1]: NN_11->[I] : 4.107565599999996E-5
+# Scanning [0, 1]: NNP_28->[I] : 1.0312262999999993E-5
+# Scanning [0, 1]: NNP_12->[I] : 9.098952010000003E-4
+# Scanning [0, 1]: JJ_31->[I] : 6.572619999999995E-7
+# Scanning [0, 1]: VBG_23->[I] : 1.0509460000000008E-6
+# Scanning [0, 1]: VBG_15->[I] : 1.0494790000000001E-6
+# Scanning [0, 1]: NNP_29->[I] : 1.0343612999999996E-5
+# Scanning [0, 1]: NN_19->[I] : 0.0033056429329999986
+# Scanning [0, 1]: NN_20->[I] : 1.29142229E-4
+# Scanning [0, 1]: JJ_24->[I] : 6.530240000000004E-7
+# Scanning [0, 1]: NNP_0->[I] : 9.842585119999997E-4
+# Scanning [0, 1]: NNP_21->[I] : 1.0304574999999993E-5
+# Scanning [0, 1]: NNP_27->[I] : 1.0308526999999998E-5
+# Scanning [0, 1]: NN_21->[I] : 0.0023091871359999998
+# Scanning [0, 1]: NN_24->[I] : 8.982808700000004E-5
+# Scanning [0, 1]: JJ_17->[I] : 6.552970000000001E-7
+# Scanning [0, 1]: NNP_20->[I] : 9.947619409999997E-4
+# Scanning [0, 1]: NNP_17->[I] : 1.2276215999999997E-5
+# Scanning [0, 1]: NN_27->[I] : 9.074720000000002E-5
+# Scanning [0, 1]: NN_3->[I] : 9.362804760000004E-4
+# Scanning [0, 1]: VBG_17->[I] : 1.0498579999999998E-6
+# Scanning [0, 1]: CD_1->[I] : 2.6941049999999978E-5
+# Scanning [0, 1]: NN_8->[I] : 4.090515300000001E-5
+# Scanning [0, 1]: DT_5->[The] : 3.952124E-6
+# Scanning [0, 1]: NNP_5->[The] : 0.002174581294000001
+# Scanning [0, 1]: NNP_26->[The] : 1.6673522399999989E-4
+# Scanning [0, 1]: NNP_9->[The] : 5.221964759999998E-4
+# Scanning [0, 1]: DT_3->[The] : 4.005901000000001E-6
+# Scanning [0, 1]: DT_9->[The] : 1.1482156800000001E-4
+# Scanning [0, 1]: NNP_3->[The] : 1.0150274399999999E-4
+# Scanning [0, 1]: DT_4->[The] : 2.8713839600000014E-4
+# Scanning [0, 1]: NNP_6->[The] : 1.2111703899999997E-4
+# Scanning [0, 1]: NNP_24->[The] : 1.9042617100000004E-4
+# Scanning [0, 1]: NNP_22->[The] : 1.66640191E-4
+# Scanning [0, 1]: DT_13->[The] : 0.843640728193
+# Scanning [0, 1]: NNP_1->[The] : 9.338700600000001E-5
+# Scanning [0, 1]: DT_7->[The] : 4.147118000000001E-6
+# Scanning [0, 1]: NNP_14->[The] : 1.0080699399999996E-4
+# Scanning [0, 1]: DT_16->[The] : 0.023319705455000003
+# Scanning [0, 1]: NNP_18->[The] : 1.8341763999999992E-4
+# Scanning [0, 1]: DT_18->[The] : 0.024638123331999995
+# Scanning [0, 1]: NNP_8->[The] : 2.37250295E-4
+# Scanning [0, 1]: NNP_10->[The] : 9.458939099999991E-5
+# Scanning [0, 1]: NNP_17->[The] : 1.6451909299999997E-4
+# Scanning [0, 1]: NNP_19->[The] : 0.012404901373999999
+# Scanning [0, 1]: DT_2->[The] : 4.025821000000002E-6
+# Scanning [0, 1]: NNP_20->[The] : 0.0013008336319999996
+# Scanning [0, 1]: DT_11->[The] : 4.158391000000001E-6
+# Scanning [0, 1]: DT_1->[The] : 4.193332000000004E-6
+# Scanning [0, 1]: DT_14->[The] : 0.11958823111099998
+# Scanning [0, 1]: DT_6->[The] : 2.0298849999999993E-5
+# Scanning [0, 1]: NNP_15->[The] : 5.208351840000002E-4
+# Scanning [0, 1]: DT_17->[The] : 0.026193006066999997
+# Scanning [0, 1]: NNP_13->[The] : 9.209932499999998E-5
+# Scanning [0, 1]: DT_15->[The] : 0.07689045753700001
+# Scanning [0, 1]: DT_10->[The] : 4.081842000000001E-6
+# Scanning [0, 1]: NNP_11->[The] : 9.656030000000003E-5
+# Scanning [0, 1]: NNP_12->[The] : 9.2311193E-5
+# Scanning [0, 1]: DT_0->[The] : 4.863757999999998E-6
+# Scanning [0, 1]: NNP_2->[The] : 8.15751313E-4
+# Scanning [0, 1]: NNP_28->[The] : 4.6520491300000013E-4
+# Scanning [0, 1]: NNP_25->[The] : 1.6428680000000003E-4
+# Scanning [0, 1]: NNP_4->[The] : 9.925881900000007E-5
+# Scanning [0, 1]: NNP_23->[The] : 2.44048318E-4
+# Scanning [0, 1]: DT_8->[The] : 3.932041000000004E-6
+# Scanning [0, 1]: NNP_7->[The] : 0.008494910361
+# Scanning [0, 1]: DT_12->[The] : 4.066701999999998E-6
+# Scanning [0, 1]: NNP_21->[The] : 4.350949690000001E-4
+# Scanning [0, 1]: NNP_27->[The] : 0.005065327969999998
+# Scanning [0, 1]: NNP_0->[The] : 9.297938600000001E-5
+# Scanning [0, 1]: NNP_29->[The] : 2.7375765399999995E-4
+# Scanning [0, 1]: NNP_16->[The] : 1.6971394299999994E-4
+# Scanning [0, 1]: DT_5->[The] : 3.952124E-6
+# Scanning [0, 1]: NNP_5->[The] : 0.002174581294000001
+# Scanning [0, 1]: NNP_26->[The] : 1.6673522399999989E-4
+# Scanning [0, 1]: NNP_9->[The] : 5.221964759999998E-4
+# Scanning [0, 1]: DT_3->[The] : 4.005901000000001E-6
+# Scanning [0, 1]: DT_9->[The] : 1.1482156800000001E-4
+# Scanning [0, 1]: NNP_3->[The] : 1.0150274399999999E-4
+# Scanning [0, 1]: DT_4->[The] : 2.8713839600000014E-4
+# Scanning [0, 1]: NNP_6->[The] : 1.2111703899999997E-4
+# Scanning [0, 1]: NNP_24->[The] : 1.9042617100000004E-4
+# Scanning [0, 1]: NNP_22->[The] : 1.66640191E-4
+# Scanning [0, 1]: DT_13->[The] : 0.843640728193
+# Scanning [0, 1]: NNP_1->[The] : 9.338700600000001E-5
+# Scanning [0, 1]: DT_7->[The] : 4.147118000000001E-6
+# Scanning [0, 1]: NNP_14->[The] : 1.0080699399999996E-4
+# Scanning [0, 1]: DT_16->[The] : 0.023319705455000003
+# Scanning [0, 1]: NNP_18->[The] : 1.8341763999999992E-4
+# Scanning [0, 1]: DT_18->[The] : 0.024638123331999995
+# Scanning [0, 1]: NNP_8->[The] : 2.37250295E-4
+# Scanning [0, 1]: NNP_10->[The] : 9.458939099999991E-5
+# Scanning [0, 1]: NNP_17->[The] : 1.6451909299999997E-4
+# Scanning [0, 1]: NNP_19->[The] : 0.012404901373999999
+# Scanning [0, 1]: DT_2->[The] : 4.025821000000002E-6
+# Scanning [0, 1]: NNP_20->[The] : 0.0013008336319999996
+# Scanning [0, 1]: DT_11->[The] : 4.158391000000001E-6
+# Scanning [0, 1]: DT_1->[The] : 4.193332000000004E-6
+# Scanning [0, 1]: DT_14->[The] : 0.11958823111099998
+# Scanning [0, 1]: DT_6->[The] : 2.0298849999999993E-5
+# Scanning [0, 1]: NNP_15->[The] : 5.208351840000002E-4
+# Scanning [0, 1]: DT_17->[The] : 0.026193006066999997
+# Scanning [0, 1]: NNP_13->[The] : 9.209932499999998E-5
+# Scanning [0, 1]: DT_15->[The] : 0.07689045753700001
+# Scanning [0, 1]: DT_10->[The] : 4.081842000000001E-6
+# Scanning [0, 1]: NNP_11->[The] : 9.656030000000003E-5
+# Scanning [0, 1]: NNP_12->[The] : 9.2311193E-5
+# Scanning [0, 1]: DT_0->[The] : 4.863757999999998E-6
+# Scanning [0, 1]: NNP_2->[The] : 8.15751313E-4
+# Scanning [0, 1]: NNP_28->[The] : 4.6520491300000013E-4
+# Scanning [0, 1]: NNP_25->[The] : 1.6428680000000003E-4
+# Scanning [0, 1]: NNP_4->[The] : 9.925881900000007E-5
+# Scanning [0, 1]: NNP_23->[The] : 2.44048318E-4
+# Scanning [0, 1]: DT_8->[The] : 3.932041000000004E-6
+# Scanning [0, 1]: NNP_7->[The] : 0.008494910361
+# Scanning [0, 1]: DT_12->[The] : 4.066701999999998E-6
+# Scanning [0, 1]: NNP_21->[The] : 4.350949690000001E-4
+# Scanning [0, 1]: NNP_27->[The] : 0.005065327969999998
+# Scanning [0, 1]: NNP_0->[The] : 9.297938600000001E-5
+# Scanning [0, 1]: NNP_29->[The] : 2.7375765399999995E-4
+# Scanning [0, 1]: NNP_16->[The] : 1.6971394299999994E-4
+# Scanning [0, 1]: NN_5->[She] : 3.606984999999997E-6
+# Scanning [0, 1]: NN_26->[She] : 1.2664516999999995E-5
+# Scanning [0, 1]: NN_12->[She] : 3.5895380000000003E-6
+# Scanning [0, 1]: NN_9->[She] : 3.5985589999999997E-6
+# Scanning [0, 1]: NN_4->[She] : 3.588333E-6
+# Scanning [0, 1]: NN_19->[She] : 1.0378160000000003E-6
+# Scanning [0, 1]: NN_23->[She] : 7.37677E-7
+# Scanning [0, 1]: NN_20->[She] : 8.752569999999997E-7
+# Scanning [0, 1]: NN_6->[She] : 6.602114999999998E-6
+# Scanning [0, 1]: NN_0->[She] : 3.5989590000000005E-6
+# Scanning [0, 1]: NN_1->[She] : 3.597420999999998E-6
+# Scanning [0, 1]: NN_17->[She] : 7.283185400000001E-5
+# Scanning [0, 1]: NN_21->[She] : 8.291340000000001E-7
+# Scanning [0, 1]: NN_13->[She] : 3.6699299999999972E-6
+# Scanning [0, 1]: NN_16->[She] : 7.355339999999994E-7
+# Scanning [0, 1]: NN_27->[She] : 7.390299999999994E-7
+# Scanning [0, 1]: NN_3->[She] : 4.980266000000001E-6
+# Scanning [0, 1]: NN_8->[She] : 2.3034312999999987E-4
+# Scanning [0, 1]: PRP_0->[She] : 0.125084034785
+# Scanning [0, 1]: NN_25->[She] : 7.762629999999998E-7
+# Scanning [0, 1]: NN_18->[She] : 7.663709999999998E-7
+# Scanning [0, 1]: NN_11->[She] : 3.596770000000001E-6
+# Scanning [0, 1]: NN_22->[She] : 1.2629319999999992E-6
+# Scanning [0, 1]: NN_24->[She] : 7.407149999999997E-7
+# Scanning [0, 1]: NN_2->[She] : 3.710679999999998E-6
+# Scanning [0, 1]: NN_28->[She] : 7.442099999999996E-7
+# Scanning [0, 1]: NN_10->[She] : 3.642553000000001E-6
+# Scanning [0, 1]: NN_7->[She] : 2.1840170699999992E-4
+# Scanning [0, 1]: NN_14->[She] : 5.423887999999997E-6
+# Scanning [0, 1]: UH_1->[She] : 5.63325667E-4
+# Scanning [0, 1]: NN_15->[She] : 8.431550000000005E-7
+# She, finished chartComplete Time elapsed: 6367 ms
+# The, finished chartComplete Time elapsed: 565 ms
+# The, finished chartComplete Time elapsed: 56 ms
+# I, finished chartComplete Time elapsed: 1484 ms
+# She, finished chartPredict Time elapsed: 138294 ms
+[She]
+prefix: 0.03381540180546399
+surprisal: 3.386838905563491
+stringprob: 5.741095401923613E-10
+# 2	<apostrophe>d,  numTags=50
+# Scanning [1, 2]: NNP_9->[<apostrophe>d] : 4.289673E-6
+# Scanning [1, 2]: VBD_6->[<apostrophe>d] : 0.004480511688000001
+# Scanning [1, 2]: MD_0->[<apostrophe>d] : 0.0029769144709999996
+# Scanning [1, 2]: VBZ_8->[<apostrophe>d] : 3.7809620000000005E-6
+# Scanning [1, 2]: NNP_5->[<apostrophe>d] : 7.263746999999995E-6
+# Scanning [1, 2]: NNP_26->[<apostrophe>d] : 3.021055E-6
+# Scanning [1, 2]: NNP_6->[<apostrophe>d] : 5.626201010000001E-4
+# Scanning [1, 2]: NNP_24->[<apostrophe>d] : 1.7250299600000008E-4
+# Scanning [1, 2]: NNP_3->[<apostrophe>d] : 5.172097000000002E-6
+# Scanning [1, 2]: VBD_0->[<apostrophe>d] : 0.0065666005909999995
+# Scanning [1, 2]: VBD_1->[<apostrophe>d] : 0.210484342516
+# Scanning [1, 2]: MD_2->[<apostrophe>d] : 0.063468915463
+# Scanning [1, 2]: VBZ_4->[<apostrophe>d] : 2.442603999999998E-6
+# Scanning [1, 2]: VBZ_1->[<apostrophe>d] : 2.5974349999999994E-6
+# Scanning [1, 2]: NNP_14->[<apostrophe>d] : 4.414283000000004E-6
+# Scanning [1, 2]: VBD_5->[<apostrophe>d] : 0.004138725088999999
+# Scanning [1, 2]: VBZ_3->[<apostrophe>d] : 1.7353598900000003E-4
+# Scanning [1, 2]: NNP_22->[<apostrophe>d] : 2.6398459999999993E-6
+# Scanning [1, 2]: NNP_1->[<apostrophe>d] : 4.635367000000002E-6
+# Scanning [1, 2]: NNP_8->[<apostrophe>d] : 4.360784999999998E-6
+# Scanning [1, 2]: NNP_10->[<apostrophe>d] : 4.258338999999999E-6
+# Scanning [1, 2]: NNP_18->[<apostrophe>d] : 2.621455E-6
+# Scanning [1, 2]: VBD_4->[<apostrophe>d] : 0.004043390988999999
+# Scanning [1, 2]: MD_1->[<apostrophe>d] : 3.8756896000000015E-4
+# Scanning [1, 2]: VBZ_0->[<apostrophe>d] : 3.0421210000000017E-6
+# Scanning [1, 2]: NNP_19->[<apostrophe>d] : 3.0202249999999987E-6
+# Scanning [1, 2]: VBZ_7->[<apostrophe>d] : 2.4400160000000016E-6
+# Scanning [1, 2]: NNP_17->[<apostrophe>d] : 2.598651000000002E-6
+# Scanning [1, 2]: VBZ_2->[<apostrophe>d] : 2.443317000000002E-6
+# Scanning [1, 2]: NNP_20->[<apostrophe>d] : 2.8996909999999986E-6
+# Scanning [1, 2]: VBZ_6->[<apostrophe>d] : 2.4377110000000005E-6
+# Scanning [1, 2]: NNP_13->[<apostrophe>d] : 4.283455000000001E-6
+# Scanning [1, 2]: NNP_11->[<apostrophe>d] : 4.260714999999997E-6
+# Scanning [1, 2]: VBD_2->[<apostrophe>d] : 0.004695633744
+# Scanning [1, 2]: NNP_15->[<apostrophe>d] : 4.361106999999998E-6
+# Scanning [1, 2]: NNP_4->[<apostrophe>d] : 4.710215999999998E-6
+# Scanning [1, 2]: NNP_23->[<apostrophe>d] : 3.006199000000001E-6
+# Scanning [1, 2]: NNP_2->[<apostrophe>d] : 4.664945999999996E-6
+# Scanning [1, 2]: NNP_28->[<apostrophe>d] : 2.7407420000000006E-6
+# Scanning [1, 2]: NNP_25->[<apostrophe>d] : 2.5940929999999986E-6
+# Scanning [1, 2]: NNP_12->[<apostrophe>d] : 4.260312999999998E-6
+# Scanning [1, 2]: NNP_16->[<apostrophe>d] : 2.734241999999998E-6
+# Scanning [1, 2]: NNP_29->[<apostrophe>d] : 9.771787000000006E-6
+# Scanning [1, 2]: VBZ_5->[<apostrophe>d] : 2.436771999999999E-6
+# Scanning [1, 2]: VBD_3->[<apostrophe>d] : 0.004118293341999998
+# Scanning [1, 2]: NNP_7->[<apostrophe>d] : 1.2633397999999996E-5
+# Scanning [1, 2]: MD_3->[<apostrophe>d] : 0.062316120135
+# Scanning [1, 2]: NNP_0->[<apostrophe>d] : 4.4012279999999985E-6
+# Scanning [1, 2]: NNP_21->[<apostrophe>d] : 1.244584459999999E-4
+# Scanning [1, 2]: NNP_27->[<apostrophe>d] : 2.7572999999999994E-6
+# <apostrophe>d, finished chartComplete Time elapsed: 5021 ms
+# The, finished chartPredict Time elapsed: 9974 ms
+[The]
+prefix: 0.05844842036201682
+surprisal: 2.839610616886622
+stringprob: 4.0063197255023544E-10
+# 2	others,  numTags=38
+# Scanning [1, 2]: NNS_0->[others] : 1.1452976000000008E-4
+# Scanning [1, 2]: VBZ_19->[others] : 2.5790380000000004E-6
+# Scanning [1, 2]: VBZ_9->[others] : 2.5788380000000004E-6
+# Scanning [1, 2]: VBZ_18->[others] : 2.577965000000002E-6
+# Scanning [1, 2]: NNS_5->[others] : 1.3374149400000005E-4
+# Scanning [1, 2]: NNS_12->[others] : 0.006018261727000002
+# Scanning [1, 2]: NNS_7->[others] : 0.0010022665049999996
+# Scanning [1, 2]: NNS_2->[others] : 1.8491353300000008E-4
+# Scanning [1, 2]: VBZ_17->[others] : 2.697562E-6
+# Scanning [1, 2]: VBZ_15->[others] : 2.580322E-6
+# Scanning [1, 2]: NNS_4->[others] : 1.1555508899999997E-4
+# Scanning [1, 2]: NNS_13->[others] : 0.03683342949
+# Scanning [1, 2]: NNS_21->[others] : 0.0038502333819999987
+# Scanning [1, 2]: NNS_6->[others] : 0.007133534146999999
+# Scanning [1, 2]: NNS_26->[others] : 0.0015780951440000004
+# Scanning [1, 2]: NNS_9->[others] : 7.992649170000002E-4
+# Scanning [1, 2]: NNS_8->[others] : 0.0013970894260000007
+# Scanning [1, 2]: NNS_15->[others] : 0.009489551901000003
+# Scanning [1, 2]: NNS_22->[others] : 0.002205609681
+# Scanning [1, 2]: VBZ_12->[others] : 2.5804880000000023E-6
+# Scanning [1, 2]: NNS_24->[others] : 0.001366703446
+# Scanning [1, 2]: NNS_19->[others] : 0.002642784167
+# Scanning [1, 2]: NNS_1->[others] : 1.3338795799999994E-4
+# Scanning [1, 2]: NNS_10->[others] : 1.1808894399999993E-4
+# Scanning [1, 2]: NNS_18->[others] : 0.0011510706990000004
+# Scanning [1, 2]: NNS_20->[others] : 0.007842986656999998
+# Scanning [1, 2]: NNS_14->[others] : 0.006719989951000003
+# Scanning [1, 2]: NNS_17->[others] : 0.0017022664569999993
+# Scanning [1, 2]: NNS_11->[others] : 0.04554549164099999
+# Scanning [1, 2]: VBZ_11->[others] : 2.580498999999999E-6
+# Scanning [1, 2]: VBZ_16->[others] : 2.321496870000001E-4
+# Scanning [1, 2]: VBZ_14->[others] : 2.579455999999999E-6
+# Scanning [1, 2]: NNS_23->[others] : 0.001425839877
+# Scanning [1, 2]: NNS_16->[others] : 0.03098393517200001
+# Scanning [1, 2]: VBZ_13->[others] : 2.582227999999999E-6
+# Scanning [1, 2]: VBZ_10->[others] : 2.582474999999998E-6
+# Scanning [1, 2]: NNS_3->[others] : 1.3636568199999999E-4
+# Scanning [1, 2]: NNS_25->[others] : 0.0012206861509999997
+# The, finished chartPredict Time elapsed: 87 ms
+[The]
+prefix: 0.05844842036201682
+surprisal: 2.839610616886622
+stringprob: 4.0063197255023544E-10
+# 2	horse,  numTags=46
+# Scanning [1, 2]: NN_22->[horse] : 8.639387930000004E-4
+# Scanning [1, 2]: NN_24->[horse] : 2.1857410699999987E-4
+# Scanning [1, 2]: NN_2->[horse] : 0.003008830798999999
+# Scanning [1, 2]: CD_4->[horse] : 6.010918289999998E-4
+# Scanning [1, 2]: NN_28->[horse] : 8.482903300000002E-4
+# Scanning [1, 2]: VBZ_12->[horse] : 3.440090000000001E-6
+# Scanning [1, 2]: NN_10->[horse] : 3.069003059999998E-4
+# Scanning [1, 2]: NN_7->[horse] : 1.0398876100000007E-4
+# Scanning [1, 2]: NN_14->[horse] : 2.2535470200000005E-4
+# Scanning [1, 2]: VBZ_11->[horse] : 3.440103999999997E-6
+# Scanning [1, 2]: VBZ_16->[horse] : 3.0962626700000015E-4
+# Scanning [1, 2]: NN_15->[horse] : 0.001747665188
+# Scanning [1, 2]: VBZ_14->[horse] : 3.4387169999999975E-6
+# Scanning [1, 2]: VBZ_13->[horse] : 3.4424110000000016E-6
+# Scanning [1, 2]: VBZ_10->[horse] : 3.442731999999998E-6
+# Scanning [1, 2]: CD_5->[horse] : 1.3762329000000008E-5
+# Scanning [1, 2]: NN_27->[horse] : 0.0011732747669999997
+# Scanning [1, 2]: CD_1->[horse] : 1.3624250999999994E-5
+# Scanning [1, 2]: NN_3->[horse] : 0.0017427401770000002
+# Scanning [1, 2]: CD_0->[horse] : 2.494229700000001E-5
+# Scanning [1, 2]: NN_8->[horse] : 9.976797800000009E-5
+# Scanning [1, 2]: NN_25->[horse] : 1.7027254900000001E-4
+# Scanning [1, 2]: NN_18->[horse] : 0.0016517185779999996
+# Scanning [1, 2]: CD_2->[horse] : 1.362618499999999E-5
+# Scanning [1, 2]: NN_11->[horse] : 3.273034459999997E-4
+# Scanning [1, 2]: NN_13->[horse] : 4.874837909999998E-4
+# Scanning [1, 2]: CD_3->[horse] : 1.4596224999999991E-5
+# Scanning [1, 2]: VBZ_19->[horse] : 3.4381530000000027E-6
+# Scanning [1, 2]: VBZ_9->[horse] : 3.4378820000000013E-6
+# Scanning [1, 2]: VBZ_18->[horse] : 3.4367340000000014E-6
+# Scanning [1, 2]: NN_16->[horse] : 0.0012268482919999997
+# Scanning [1, 2]: NN_5->[horse] : 9.94621496E-4
+# Scanning [1, 2]: NN_26->[horse] : 0.0017959028559999997
+# Scanning [1, 2]: NN_12->[horse] : 2.084837859999999E-4
+# Scanning [1, 2]: NN_9->[horse] : 3.3251118500000014E-4
+# Scanning [1, 2]: NN_4->[horse] : 0.0032478885209999996
+# Scanning [1, 2]: NN_19->[horse] : 2.946288909999998E-4
+# Scanning [1, 2]: VBZ_15->[horse] : 3.4398700000000024E-6
+# Scanning [1, 2]: NN_23->[horse] : 3.3989534999999985E-4
+# Scanning [1, 2]: VBZ_17->[horse] : 3.453486999999999E-6
+# Scanning [1, 2]: NN_20->[horse] : 0.0013264556549999998
+# Scanning [1, 2]: NN_6->[horse] : 0.0014255197629999994
+# Scanning [1, 2]: NN_0->[horse] : 7.098796429999999E-4
+# Scanning [1, 2]: NN_1->[horse] : 1.832179839999999E-4
+# Scanning [1, 2]: NN_17->[horse] : 0.0028397546660000003
+# Scanning [1, 2]: NN_21->[horse] : 6.192944949999999E-4
+# others, finished chartComplete Time elapsed: 4564 ms
+# horse, finished chartComplete Time elapsed: 140 ms
+# I, finished chartPredict Time elapsed: 9167 ms
+[I]
+prefix: 0.08801659265924994
+surprisal: 2.430229929331781
+stringprob: 1.847389797105142E-8
+# 2	taunted,  numTags=25
+# Scanning [1, 2]: VBD_9->[taunted] : 4.892895999999996E-6
+# Scanning [1, 2]: VBD_8->[taunted] : 6.120112E-6
+# Scanning [1, 2]: VBD_20->[taunted] : 5.136216999999997E-6
+# Scanning [1, 2]: VBD_12->[taunted] : 8.221571999999996E-6
+# Scanning [1, 2]: VBN_22->[taunted] : 6.287797E-6
+# Scanning [1, 2]: VBD_18->[taunted] : 4.812483999999997E-6
+# Scanning [1, 2]: VBD_19->[taunted] : 4.830235999999998E-6
+# Scanning [1, 2]: VBN_17->[taunted] : 6.0018750000000026E-6
+# Scanning [1, 2]: VBN_23->[taunted] : 6.00291E-6
+# Scanning [1, 2]: VBN_20->[taunted] : 5.996490999999995E-6
+# Scanning [1, 2]: VBN_19->[taunted] : 6.001478000000004E-6
+# Scanning [1, 2]: VBD_14->[taunted] : 4.366259250000001E-4
+# Scanning [1, 2]: VBD_10->[taunted] : 4.894187000000003E-6
+# Scanning [1, 2]: VBN_16->[taunted] : 5.993153999999995E-6
+# Scanning [1, 2]: VBD_15->[taunted] : 1.6698536300000007E-4
+# Scanning [1, 2]: VBD_22->[taunted] : 5.109901E-6
+# Scanning [1, 2]: VBD_17->[taunted] : 4.848892999999996E-6
+# Scanning [1, 2]: VBN_18->[taunted] : 4.30570428E-4
+# Scanning [1, 2]: VBD_11->[taunted] : 8.210380000000006E-6
+# Scanning [1, 2]: VBD_7->[taunted] : 4.988188999999996E-6
+# Scanning [1, 2]: VBN_21->[taunted] : 5.996815999999998E-6
+# Scanning [1, 2]: VBN_15->[taunted] : 5.9845790000000046E-6
+# Scanning [1, 2]: VBD_21->[taunted] : 5.386855999999998E-6
+# Scanning [1, 2]: VBD_16->[taunted] : 4.347888300000003E-5
+# Scanning [1, 2]: VBD_13->[taunted] : 5.4323689999999975E-6
+# taunted, finished chartComplete Time elapsed: 4301 ms
+# others, finished chartPredict Time elapsed: 260142 ms
+[The, others]
+prefix: 2.853432427605949E-4
+surprisal: 5.322207124905917
+stringprob: 5.378216980828073E-11
+# 3	she,  numTags=3
+# Scanning [2, 3]: PRP_0->[she] : 6.5723724E-5
+# Scanning [2, 3]: PRP_1->[she] : 0.12460228507899998
+# Scanning [2, 3]: PRP_2->[she] : 0.015488211523000003
+# she, finished chartComplete Time elapsed: 7755 ms
+# horse, finished chartPredict Time elapsed: 25538 ms
+[The, horse]
+prefix: 6.583105464061078E-5
+surprisal: 6.788808259057644
+stringprob: 7.713410401796599E-11
+# 3	had,  numTags=47
+# Scanning [2, 3]: VBD_17->[had] : 6.355310600000003E-5
+# Scanning [2, 3]: VBN_18->[had] : 0.0029093082739999995
+# Scanning [2, 3]: VBD_11->[had] : 4.497653399999998E-5
+# Scanning [2, 3]: VBN_14->[had] : 0.005260422072999999
+# Scanning [2, 3]: VBD_5->[had] : 0.04309956180200001
+# Scanning [2, 3]: VBD_22->[had] : 1.183643400000001E-5
+# Scanning [2, 3]: VBN_12->[had] : 1.5679458399999992E-4
+# Scanning [2, 3]: VBN_2->[had] : 1.997509500000001E-4
+# Scanning [2, 3]: VBN_16->[had] : 0.035510924050999995
+# Scanning [2, 3]: VBN_3->[had] : 1.2355774100000002E-4
+# Scanning [2, 3]: VBD_15->[had] : 1.9673538999999997E-5
+# Scanning [2, 3]: VBN_6->[had] : 4.49928439E-4
+# Scanning [2, 3]: VBD_10->[had] : 9.128909999999996E-6
+# Scanning [2, 3]: VBN_1->[had] : 1.2114369399999998E-4
+# Scanning [2, 3]: VBD_21->[had] : 3.6050908000000006E-5
+# Scanning [2, 3]: VBD_16->[had] : 2.745176099999998E-5
+# Scanning [2, 3]: VBD_13->[had] : 5.173966000000002E-5
+# Scanning [2, 3]: VBN_21->[had] : 0.0022901461339999997
+# Scanning [2, 3]: VBN_15->[had] : 0.0027032506069999992
+# Scanning [2, 3]: VBN_4->[had] : 1.231312780000001E-4
+# Scanning [2, 3]: VBN_0->[had] : 1.2080787399999999E-4
+# Scanning [2, 3]: VBD_3->[had] : 0.03714025869200001
+# Scanning [2, 3]: VBN_13->[had] : 0.007237896864000001
+# Scanning [2, 3]: VBD_7->[had] : 1.7400737000000012E-5
+# Scanning [2, 3]: VBD_4->[had] : 0.03682646558399999
+# Scanning [2, 3]: VBD_12->[had] : 3.329649499999999E-5
+# Scanning [2, 3]: VBN_22->[had] : 0.007434928248000001
+# Scanning [2, 3]: VBD_6->[had] : 0.132805637243
+# Scanning [2, 3]: VBN_11->[had] : 0.0015712358180000005
+# Scanning [2, 3]: VBD_8->[had] : 1.2238213999999994E-5
+# Scanning [2, 3]: VBD_20->[had] : 9.229493000000006E-6
+# Scanning [2, 3]: VBD_9->[had] : 2.5127618000000006E-5
+# Scanning [2, 3]: VBN_8->[had] : 6.986075779999999E-4
+# Scanning [2, 3]: VBN_20->[had] : 0.004107104343999999
+# Scanning [2, 3]: VBN_19->[had] : 0.0022942891439999996
+# Scanning [2, 3]: VBD_14->[had] : 7.727841920000003E-4
+# Scanning [2, 3]: VBN_17->[had] : 0.0024716577339999996
+# Scanning [2, 3]: VBN_10->[had] : 1.2110328299999995E-4
+# Scanning [2, 3]: VBN_23->[had] : 0.08568462247199998
+# Scanning [2, 3]: VBD_19->[had] : 8.655231999999999E-6
+# Scanning [2, 3]: VBD_0->[had] : 0.848832110912
+# Scanning [2, 3]: VBN_9->[had] : 1.9837670399999992E-4
+# Scanning [2, 3]: VBD_2->[had] : 0.04278388776199999
+# Scanning [2, 3]: VBN_5->[had] : 1.4266231500000012E-4
+# Scanning [2, 3]: VBD_1->[had] : 0.678304558511
+# Scanning [2, 3]: VBN_7->[had] : 3.3422940200000014E-4
+# Scanning [2, 3]: VBD_18->[had] : 1.0713662399999999E-4
+# had, finished chartComplete Time elapsed: 9268 ms
+# <apostrophe>d, finished chartPredict Time elapsed: 42667 ms
+[She, <apostrophe>d]
+prefix: 3.390226342155867E-4
+surprisal: 4.602604779651589
+stringprob: 7.500211832510821E-11
+# 3	get,  numTags=48
+# Scanning [2, 3]: VB_13->[get] : 0.089246014056
+# Scanning [2, 3]: VB_25->[get] : 0.029315893698999996
+# Scanning [2, 3]: VB_17->[get] : 0.005429836991000002
+# Scanning [2, 3]: VB_12->[get] : 0.057716636525999995
+# Scanning [2, 3]: VBP_2->[get] : 0.001560399361
+# Scanning [2, 3]: VB_18->[get] : 0.0030560361780000013
+# Scanning [2, 3]: VBP_8->[get] : 0.0035120127410000015
+# Scanning [2, 3]: VB_4->[get] : 0.08417204913200002
+# Scanning [2, 3]: VB_21->[get] : 0.03481505889
+# Scanning [2, 3]: VBP_19->[get] : 0.044118448314999996
+# Scanning [2, 3]: VB_3->[get] : 0.006603212708000002
+# Scanning [2, 3]: VB_1->[get] : 0.006652123152
+# Scanning [2, 3]: VB_6->[get] : 0.11653484003000002
+# Scanning [2, 3]: VB_26->[get] : 0.141808617418
+# Scanning [2, 3]: VB_14->[get] : 0.012464904501
+# Scanning [2, 3]: VBP_5->[get] : 0.0012317795669999998
+# Scanning [2, 3]: VBP_1->[get] : 0.005627599058
+# Scanning [2, 3]: VBP_6->[get] : 0.014075185096999995
+# Scanning [2, 3]: VBP_16->[get] : 0.093353544202
+# Scanning [2, 3]: VB_2->[get] : 0.008827104431
+# Scanning [2, 3]: VB_23->[get] : 0.0031610106999999995
+# Scanning [2, 3]: VB_24->[get] : 0.007063749446000001
+# Scanning [2, 3]: VBP_9->[get] : 0.0057910520180000005
+# Scanning [2, 3]: VBP_12->[get] : 0.006414714302
+# Scanning [2, 3]: VB_8->[get] : 0.025082526553999996
+# Scanning [2, 3]: VBP_4->[get] : 0.0017387207960000007
+# Scanning [2, 3]: VBP_17->[get] : 0.038811474590000006
+# Scanning [2, 3]: VB_27->[get] : 0.0033935745110000005
+# Scanning [2, 3]: VB_11->[get] : 0.015483560612000001
+# Scanning [2, 3]: VB_0->[get] : 0.005079525035999999
+# Scanning [2, 3]: VBP_0->[get] : 4.4443109199999986E-4
+# Scanning [2, 3]: VBP_18->[get] : 0.009233391389
+# Scanning [2, 3]: VBP_15->[get] : 0.015258206991
+# Scanning [2, 3]: VBP_13->[get] : 0.052097778402000014
+# Scanning [2, 3]: VBP_11->[get] : 0.007132258951999999
+# Scanning [2, 3]: VB_10->[get] : 0.06076087899899999
+# Scanning [2, 3]: VB_16->[get] : 0.008268384864000002
+# Scanning [2, 3]: VBP_10->[get] : 0.005334601549000002
+# Scanning [2, 3]: VB_7->[get] : 0.005741760662000003
+# Scanning [2, 3]: VB_20->[get] : 0.015166067957999997
+# Scanning [2, 3]: VB_15->[get] : 0.005539456348000002
+# Scanning [2, 3]: VBP_14->[get] : 0.020487979058
+# Scanning [2, 3]: VBP_7->[get] : 0.0013690647360000004
+# Scanning [2, 3]: VB_5->[get] : 0.009614189842
+# Scanning [2, 3]: VB_9->[get] : 0.019670455168
+# Scanning [2, 3]: VB_22->[get] : 0.002500057167999999
+# Scanning [2, 3]: VB_19->[get] : 0.002439079397999999
+# Scanning [2, 3]: VBP_3->[get] : 4.20054292E-4
+# get, finished chartComplete Time elapsed: 9037 ms
+# taunted, finished chartPredict Time elapsed: 15777 ms
+[I, taunted]
+prefix: 1.5638136498059853E-6
+surprisal: 10.938153143348686
+stringprob: 2.5563621553201798E-11
+# 3	them,  numTags=2
+# Scanning [2, 3]: PRP_1->[them] : 0.012056882868000005
+# Scanning [2, 3]: PRP_2->[them] : 0.096479879287
+# them, finished chartComplete Time elapsed: 7694 ms
+# she, finished chartPredict Time elapsed: 345898 ms
+[The, others, she]
+prefix: 2.4363269609519264E-7
+surprisal: 7.06578634790127
+stringprob: 1.9162135535705893E-15
+# 4	decided,  numTags=63
+# Scanning [3, 4]: VBD_10->[decided] : 0.012686227902000006
+# Scanning [3, 4]: VBN_3->[decided] : 2.3365720299999988E-4
+# Scanning [3, 4]: JJ_10->[decided] : 1.3217579999999995E-6
+# Scanning [3, 4]: VBD_15->[decided] : 0.0019206246019999992
+# Scanning [3, 4]: VBN_14->[decided] : 5.351864960000002E-4
+# Scanning [3, 4]: VBD_22->[decided] : 0.0010860265989999997
+# Scanning [3, 4]: VBN_12->[decided] : 0.0014285410100000004
+# Scanning [3, 4]: JJ_9->[decided] : 7.94179E-7
+# Scanning [3, 4]: VBD_11->[decided] : 6.72063228E-4
+# Scanning [3, 4]: VBD_3->[decided] : 1.0053977999999993E-4
+# Scanning [3, 4]: VBN_15->[decided] : 7.355593759999999E-4
+# Scanning [3, 4]: VBN_4->[decided] : 3.2221714700000025E-4
+# Scanning [3, 4]: VBN_0->[decided] : 2.3513099200000005E-4
+# Scanning [3, 4]: JJ_1->[decided] : 7.947649999999993E-7
+# Scanning [3, 4]: JJ_3->[decided] : 7.94821E-7
+# Scanning [3, 4]: VBN_11->[decided] : 0.0013261726739999995
+# Scanning [3, 4]: VBD_20->[decided] : 6.980632430000001E-4
+# Scanning [3, 4]: VBD_4->[decided] : 2.248765000000001E-6
+# Scanning [3, 4]: VBN_22->[decided] : 0.0010663274049999996
+# Scanning [3, 4]: JJ_11->[decided] : 1.0675163199999994E-4
+# Scanning [3, 4]: VBD_18->[decided] : 0.03858193674999999
+# Scanning [3, 4]: VBN_9->[decided] : 0.0035860428420000008
+# Scanning [3, 4]: VBD_2->[decided] : 2.556866999999999E-6
+# Scanning [3, 4]: VBN_17->[decided] : 0.002662021806999999
+# Scanning [3, 4]: JJ_7->[decided] : 7.944389999999993E-7
+# Scanning [3, 4]: VBN_10->[decided] : 2.3264962300000003E-4
+# Scanning [3, 4]: VBN_20->[decided] : 9.508706289999997E-4
+# Scanning [3, 4]: VBN_19->[decided] : 8.269660489999996E-4
+# Scanning [3, 4]: JJ_2->[decided] : 7.946980000000006E-7
+# Scanning [3, 4]: VBD_14->[decided] : 6.623899209999997E-4
+# Scanning [3, 4]: JJ_0->[decided] : 7.954079999999999E-7
+# Scanning [3, 4]: JJ_14->[decided] : 7.982409999999999E-7
+# Scanning [3, 4]: VBN_6->[decided] : 3.3039292499999987E-4
+# Scanning [3, 4]: VBN_1->[decided] : 2.3636063299999982E-4
+# Scanning [3, 4]: VBN_16->[decided] : 0.04067391494300001
+# Scanning [3, 4]: JJ_15->[decided] : 7.953930000000006E-7
+# Scanning [3, 4]: VBD_5->[decided] : 2.6930920000000016E-6
+# Scanning [3, 4]: VBN_2->[decided] : 2.466451370000001E-4
+# Scanning [3, 4]: VBD_17->[decided] : 0.014389374223999996
+# Scanning [3, 4]: VBN_18->[decided] : 6.649331129999998E-4
+# Scanning [3, 4]: JJ_4->[decided] : 7.963040000000005E-7
+# Scanning [3, 4]: VBD_7->[decided] : 0.012638328448999996
+# Scanning [3, 4]: JJ_8->[decided] : 7.942329999999995E-7
+# Scanning [3, 4]: VBN_13->[decided] : 0.0020598329539999994
+# Scanning [3, 4]: JJ_13->[decided] : 8.02502E-7
+# Scanning [3, 4]: VBN_21->[decided] : 7.281118740000002E-4
+# Scanning [3, 4]: JJ_5->[decided] : 7.951180000000001E-7
+# Scanning [3, 4]: JJ_6->[decided] : 7.944300000000005E-7
+# Scanning [3, 4]: VBD_21->[decided] : 8.646857619999999E-4
+# Scanning [3, 4]: VBD_16->[decided] : 0.0011395890789999996
+# Scanning [3, 4]: VBD_13->[decided] : 6.634305190000001E-4
+# Scanning [3, 4]: VBD_9->[decided] : 0.0011103651929999998
+# Scanning [3, 4]: VBD_6->[decided] : 2.2807170000000003E-6
+# Scanning [3, 4]: VBD_8->[decided] : 0.0010571862440000002
+# Scanning [3, 4]: VBD_12->[decided] : 6.325353309999999E-4
+# Scanning [3, 4]: VBD_1->[decided] : 2.127119000000001E-6
+# Scanning [3, 4]: VBN_7->[decided] : 5.892622309999997E-4
+# Scanning [3, 4]: VBD_19->[decided] : 6.066169730000003E-4
+# Scanning [3, 4]: VBD_0->[decided] : 5.081174000000001E-6
+# Scanning [3, 4]: VBN_5->[decided] : 2.7401066999999986E-4
+# Scanning [3, 4]: VBN_23->[decided] : 8.200142980000001E-4
+# Scanning [3, 4]: VBN_8->[decided] : 0.020820539872
+# Scanning [3, 4]: JJ_12->[decided] : 8.039530000000006E-7
+# decided, finished chartComplete Time elapsed: 16296 ms
+# had, finished chartPredict Time elapsed: 82784 ms
+[The, horse, had]
+prefix: 3.1733678614954065E-6
+surprisal: 3.032298241220696
+stringprob: 5.791785509641233E-13
+# 4	taken,  numTags=24
+# Scanning [3, 4]: VBN_8->[taken] : 0.0036460489590000003
+# Scanning [3, 4]: VBN_20->[taken] : 0.019115882333000003
+# Scanning [3, 4]: VBN_19->[taken] : 0.014163923557999999
+# Scanning [3, 4]: VBN_17->[taken] : 0.0032255584950000014
+# Scanning [3, 4]: VBN_21->[taken] : 0.0022105346550000005
+# Scanning [3, 4]: VBN_10->[taken] : 0.001036566444
+# Scanning [3, 4]: VBN_15->[taken] : 0.001992955558
+# Scanning [3, 4]: VBN_4->[taken] : 0.021142697296000004
+# Scanning [3, 4]: VBN_0->[taken] : 0.001006048199
+# Scanning [3, 4]: VBN_23->[taken] : 0.040034064351
+# Scanning [3, 4]: VBN_9->[taken] : 0.003158296185
+# Scanning [3, 4]: VBN_13->[taken] : 0.006632049897000003
+# Scanning [3, 4]: VBN_5->[taken] : 0.051938405729000006
+# Scanning [3, 4]: VBN_7->[taken] : 0.007435889845000002
+# Scanning [3, 4]: VBN_18->[taken] : 0.004863746824
+# Scanning [3, 4]: VBN_22->[taken] : 0.019275656744000003
+# Scanning [3, 4]: VBN_14->[taken] : 0.019778303830999995
+# Scanning [3, 4]: VBN_12->[taken] : 0.0041162532969999995
+# Scanning [3, 4]: VBN_11->[taken] : 0.008984168442999999
+# Scanning [3, 4]: VBN_2->[taken] : 0.0015533708070000003
+# Scanning [3, 4]: VBN_16->[taken] : 0.0038062143689999986
+# Scanning [3, 4]: VBN_3->[taken] : 0.00120368477
+# Scanning [3, 4]: VBN_6->[taken] : 0.007342572797
+# Scanning [3, 4]: VBN_1->[taken] : 0.0010148389519999998
+# taken, finished chartComplete Time elapsed: 13288 ms
+# get, finished chartPredict Time elapsed: 9236 ms
+[She, <apostrophe>d, get]
+prefix: 4.485069281495262E-6
+surprisal: 4.325312929978645
+stringprob: 4.256434743666324E-11
+# 4	to,  numTags=26
+# Scanning [3, 4]: IN_14->[to] : 1.5321952100000013E-4
+# Scanning [3, 4]: IN_6->[to] : 1.0612229999999993E-6
+# Scanning [3, 4]: IN_0->[to] : 5.906949599999996E-5
+# Scanning [3, 4]: IN_13->[to] : 0.002716216311
+# Scanning [3, 4]: IN_15->[to] : 3.8743790999999997E-4
+# Scanning [3, 4]: IN_7->[to] : 1.033145E-6
+# Scanning [3, 4]: IN_2->[to] : 3.170610499999997E-5
+# Scanning [3, 4]: IN_5->[to] : 1.4160159999999993E-6
+# Scanning [3, 4]: IN_12->[to] : 9.627647999999998E-5
+# Scanning [3, 4]: IN_21->[to] : 9.571508100000007E-5
+# Scanning [3, 4]: IN_24->[to] : 9.389096700000001E-5
+# Scanning [3, 4]: IN_19->[to] : 1.390484660000001E-4
+# Scanning [3, 4]: IN_16->[to] : 6.88081841E-4
+# Scanning [3, 4]: IN_10->[to] : 1.4924499999999992E-6
+# Scanning [3, 4]: IN_18->[to] : 1.7926970199999987E-4
+# Scanning [3, 4]: IN_9->[to] : 1.0439650000000008E-6
+# Scanning [3, 4]: IN_22->[to] : 9.505831200000002E-5
+# Scanning [3, 4]: IN_4->[to] : 1.178771E-6
+# Scanning [3, 4]: IN_11->[to] : 0.0071478212459999985
+# Scanning [3, 4]: TO_0->[to] : 0.988559707454
+# Scanning [3, 4]: IN_20->[to] : 9.837881399999997E-5
+# Scanning [3, 4]: IN_3->[to] : 1.3870270000000008E-6
+# Scanning [3, 4]: IN_8->[to] : 1.0539699999999994E-6
+# Scanning [3, 4]: IN_17->[to] : 1.165117189999999E-4
+# Scanning [3, 4]: IN_23->[to] : 9.971770300000004E-5
+# Scanning [3, 4]: IN_1->[to] : 2.709444999999999E-6
+# to, finished chartComplete Time elapsed: 13869 ms
+# them, finished chartPredict Time elapsed: 26701 ms
+[I, taunted, them]
+prefix: 5.675660861082023E-8
+surprisal: 3.3161106633923705
+stringprob: 1.5810904012820485E-12
+# 4	;,  numTags=6
+# Scanning [3, 4]: COLON_1->[;] : 8.513264950000001E-4
+# Scanning [3, 4]: COLON_3->[;] : 0.72281230714
+# Scanning [3, 4]: COMMA_0->[;] : 3.206477899999999E-5
+# Scanning [3, 4]: COLON_0->[;] : 2.5522333300000014E-4
+# Scanning [3, 4]: COLON_4->[;] : 0.23274515493099998
+# Scanning [3, 4]: COLON_2->[;] : 0.0021462558310000003
+# ;, finished chartComplete Time elapsed: 8987 ms
+# taken, finished chartPredict Time elapsed: 495506 ms
+[The, horse, had, taken]
+prefix: 2.758133941977253E-8
+surprisal: 4.745409283701674
+stringprob: 1.7407773451491546E-13
+# 5	in,  numTags=62
+# Scanning [4, 5]: IN_11->[in] : 5.842905870000002E-4
+# Scanning [4, 5]: VBZ_5->[in] : 4.8597690000000015E-6
+# Scanning [4, 5]: IN_8->[in] : 0.010365668227999997
+# Scanning [4, 5]: RB_9->[in] : 0.002036111702
+# Scanning [4, 5]: IN_20->[in] : 9.434854619999995E-4
+# Scanning [4, 5]: IN_19->[in] : 0.0025150166289999993
+# Scanning [4, 5]: RB_19->[in] : 1.0306340000000007E-6
+# Scanning [4, 5]: RB_23->[in] : 1.2109040000000005E-6
+# Scanning [4, 5]: IN_10->[in] : 0.024258853734
+# Scanning [4, 5]: RB_5->[in] : 6.601235709999999E-4
+# Scanning [4, 5]: IN_9->[in] : 0.010854129444
+# Scanning [4, 5]: IN_2->[in] : 0.06312119785999999
+# Scanning [4, 5]: VBZ_6->[in] : 5.082501000000001E-6
+# Scanning [4, 5]: RB_8->[in] : 7.805893829999997E-4
+# Scanning [4, 5]: RB_21->[in] : 9.132459999999997E-7
+# Scanning [4, 5]: RB_2->[in] : 3.9106448999999976E-5
+# Scanning [4, 5]: VBZ_0->[in] : 8.141723000000002E-6
+# Scanning [4, 5]: IN_14->[in] : 0.0013628279929999998
+# Scanning [4, 5]: RP_0->[in] : 0.030594713509000004
+# Scanning [4, 5]: RB_7->[in] : 4.3654155199999994E-4
+# Scanning [4, 5]: IN_0->[in] : 0.463943437291
+# Scanning [4, 5]: RB_6->[in] : 3.822831430000001E-4
+# Scanning [4, 5]: RB_12->[in] : 4.0955287E-5
+# Scanning [4, 5]: VBZ_7->[in] : 5.060149000000002E-6
+# Scanning [4, 5]: VBZ_2->[in] : 7.3943089999999984E-6
+# Scanning [4, 5]: IN_15->[in] : 7.865406649999999E-4
+# Scanning [4, 5]: IN_4->[in] : 0.017780206972000008
+# Scanning [4, 5]: FW_0->[in] : 0.005187517689999999
+# Scanning [4, 5]: IN_22->[in] : 5.70894768E-4
+# Scanning [4, 5]: IN_3->[in] : 0.05325174415
+# Scanning [4, 5]: RB_24->[in] : 8.635859999999999E-7
+# Scanning [4, 5]: RB_1->[in] : 6.183513900000005E-5
+# Scanning [4, 5]: RB_11->[in] : 4.6931841999999985E-5
+# Scanning [4, 5]: IN_17->[in] : 0.0013592893150000005
+# Scanning [4, 5]: IN_23->[in] : 0.0033465732269999993
+# Scanning [4, 5]: IN_1->[in] : 0.08075404726899998
+# Scanning [4, 5]: RB_18->[in] : 8.635610000000003E-7
+# Scanning [4, 5]: RB_22->[in] : 8.476095099999998E-5
+# Scanning [4, 5]: IN_16->[in] : 0.05554194841300001
+# Scanning [4, 5]: VBZ_1->[in] : 4.951691999999998E-6
+# Scanning [4, 5]: IN_18->[in] : 0.0020156036170000005
+# Scanning [4, 5]: RB_14->[in] : 8.808429999999996E-7
+# Scanning [4, 5]: VBZ_3->[in] : 3.38858297E-4
+# Scanning [4, 5]: IN_12->[in] : 5.59576613E-4
+# Scanning [4, 5]: IN_7->[in] : 0.009337335624999997
+# Scanning [4, 5]: IN_5->[in] : 0.015885506775999998
+# Scanning [4, 5]: IN_24->[in] : 0.0018996489040000008
+# Scanning [4, 5]: IN_21->[in] : 5.686871649999998E-4
+# Scanning [4, 5]: VBZ_4->[in] : 8.085534999999996E-6
+# Scanning [4, 5]: RB_17->[in] : 8.652569999999997E-7
+# Scanning [4, 5]: RB_16->[in] : 8.937039999999995E-7
+# Scanning [4, 5]: RB_15->[in] : 9.567650000000006E-7
+# Scanning [4, 5]: RB_4->[in] : 7.136446299999998E-5
+# Scanning [4, 5]: RB_25->[in] : 8.841790000000002E-7
+# Scanning [4, 5]: IN_6->[in] : 0.013002774008999997
+# Scanning [4, 5]: RB_3->[in] : 3.9684217E-5
+# Scanning [4, 5]: IN_13->[in] : 6.482931909999999E-4
+# Scanning [4, 5]: RB_10->[in] : 1.2258175099999998E-4
+# Scanning [4, 5]: RB_13->[in] : 5.194154799999997E-5
+# Scanning [4, 5]: RB_0->[in] : 5.057033999999997E-5
+# Scanning [4, 5]: VBZ_8->[in] : 6.301335000000005E-6
+# Scanning [4, 5]: RB_20->[in] : 8.689149999999993E-7
+# decided, finished chartPredict Time elapsed: 6704 ms
+[The, others, she, decided]
+prefix: 2.852894811620961E-10
+surprisal: 6.7499126380882615
+stringprob: 2.5445425772609246E-16
+# 5	to,  numTags=26
+# Scanning [4, 5]: IN_14->[to] : 1.5321952100000013E-4
+# Scanning [4, 5]: IN_6->[to] : 1.0612229999999993E-6
+# Scanning [4, 5]: IN_0->[to] : 5.906949599999996E-5
+# Scanning [4, 5]: IN_13->[to] : 0.002716216311
+# Scanning [4, 5]: IN_15->[to] : 3.8743790999999997E-4
+# Scanning [4, 5]: IN_7->[to] : 1.033145E-6
+# Scanning [4, 5]: IN_2->[to] : 3.170610499999997E-5
+# Scanning [4, 5]: IN_5->[to] : 1.4160159999999993E-6
+# Scanning [4, 5]: IN_12->[to] : 9.627647999999998E-5
+# Scanning [4, 5]: IN_21->[to] : 9.571508100000007E-5
+# Scanning [4, 5]: IN_24->[to] : 9.389096700000001E-5
+# Scanning [4, 5]: IN_19->[to] : 1.390484660000001E-4
+# Scanning [4, 5]: IN_16->[to] : 6.88081841E-4
+# Scanning [4, 5]: IN_10->[to] : 1.4924499999999992E-6
+# Scanning [4, 5]: IN_18->[to] : 1.7926970199999987E-4
+# Scanning [4, 5]: IN_9->[to] : 1.0439650000000008E-6
+# Scanning [4, 5]: IN_22->[to] : 9.505831200000002E-5
+# Scanning [4, 5]: IN_4->[to] : 1.178771E-6
+# Scanning [4, 5]: IN_11->[to] : 0.0071478212459999985
+# Scanning [4, 5]: TO_0->[to] : 0.988559707454
+# Scanning [4, 5]: IN_20->[to] : 9.837881399999997E-5
+# Scanning [4, 5]: IN_3->[to] : 1.3870270000000008E-6
+# Scanning [4, 5]: IN_8->[to] : 1.0539699999999994E-6
+# Scanning [4, 5]: IN_17->[to] : 1.165117189999999E-4
+# Scanning [4, 5]: IN_23->[to] : 9.971770300000004E-5
+# Scanning [4, 5]: IN_1->[to] : 2.709444999999999E-6
+# in, finished chartComplete Time elapsed: 15943 ms
+# ;, finished chartPredict Time elapsed: 240 ms
+[I, taunted, them, ;]
+prefix: 1.313621226678777E-10
+surprisal: 6.068569575117429
+stringprob: 9.241009616632492E-20
+# 5	I,  numTags=97
+# Scanning [4, 5]: NNP_14->[I] : 9.369643639999998E-4
+# Scanning [4, 5]: VBG_22->[I] : 1.0495499999999998E-6
+# Scanning [4, 5]: JJ_28->[I] : 6.55589E-7
+# Scanning [4, 5]: NNP_22->[I] : 1.0411935000000007E-5
+# Scanning [4, 5]: NN_4->[I] : 5.552279500000003E-5
+# Scanning [4, 5]: NN_9->[I] : 6.340956999999997E-5
+# Scanning [4, 5]: CD_6->[I] : 9.901715109999999E-4
+# Scanning [4, 5]: NN_0->[I] : 1.988646860000001E-4
+# Scanning [4, 5]: NN_10->[I] : 6.559865899999996E-5
+# Scanning [4, 5]: NNP_26->[I] : 1.0297680000000007E-5
+# Scanning [4, 5]: NN_15->[I] : 0.002061808657000001
+# Scanning [4, 5]: VBG_16->[I] : 1.0500389999999997E-6
+# Scanning [4, 5]: VBG_13->[I] : 1.0501739999999998E-6
+# Scanning [4, 5]: NNP_6->[I] : 0.001365649648
+# Scanning [4, 5]: NNP_3->[I] : 0.11395695874899998
+# Scanning [4, 5]: NN_13->[I] : 7.659071179999997E-4
+# Scanning [4, 5]: CD_3->[I] : 2.3741722000000007E-5
+# Scanning [4, 5]: NNP_4->[I] : 0.0010214878849999997
+# Scanning [4, 5]: VBG_20->[I] : 1.0487389999999994E-6
+# Scanning [4, 5]: PRP_1->[I] : 0.195492935114
+# Scanning [4, 5]: NNP_23->[I] : 2.279946400000001E-5
+# Scanning [4, 5]: NNP_2->[I] : 0.0023311286429999996
+# Scanning [4, 5]: NNP_25->[I] : 1.0304358000000004E-5
+# Scanning [4, 5]: NN_16->[I] : 9.804850299999999E-5
+# Scanning [4, 5]: JJ_23->[I] : 6.522689999999999E-7
+# Scanning [4, 5]: NNP_16->[I] : 1.0310478000000004E-5
+# Scanning [4, 5]: NN_5->[I] : 9.772917799999992E-5
+# Scanning [4, 5]: NNP_7->[I] : 0.0028065616699999994
+# Scanning [4, 5]: NN_17->[I] : 0.002364818081000001
+# Scanning [4, 5]: JJ_29->[I] : 6.569809999999997E-7
+# Scanning [4, 5]: CD_4->[I] : 1.6534049000000002E-5
+# Scanning [4, 5]: NN_7->[I] : 0.0018963468520000006
+# Scanning [4, 5]: JJ_26->[I] : 6.54406E-7
+# Scanning [4, 5]: NNP_19->[I] : 1.0318277E-5
+# Scanning [4, 5]: NNP_11->[I] : 9.433029389999999E-4
+# Scanning [4, 5]: CD_5->[I] : 7.059323570000001E-4
+# Scanning [4, 5]: NNP_13->[I] : 9.121395469999999E-4
+# Scanning [4, 5]: JJ_16->[I] : 6.530760000000004E-7
+# Scanning [4, 5]: VBG_14->[I] : 1.0502080000000006E-6
+# Scanning [4, 5]: NNP_15->[I] : 9.183726709999999E-4
+# Scanning [4, 5]: CD_2->[I] : 2.561963000000002E-5
+# Scanning [4, 5]: JJ_19->[I] : 6.524820000000001E-7
+# Scanning [4, 5]: NNP_1->[I] : 0.0011737126740000005
+# Scanning [4, 5]: JJ_18->[I] : 6.525800000000005E-7
+# Scanning [4, 5]: NNP_8->[I] : 0.0030515425459999987
+# Scanning [4, 5]: NN_12->[I] : 9.615123000000005E-5
+# Scanning [4, 5]: NN_26->[I] : 8.881459299999997E-5
+# Scanning [4, 5]: NNP_10->[I] : 9.369935120000003E-4
+# Scanning [4, 5]: NN_23->[I] : 1.0621604299999991E-4
+# Scanning [4, 5]: JJ_25->[I] : 6.531629999999997E-7
+# Scanning [4, 5]: NN_6->[I] : 4.573653300000001E-5
+# Scanning [4, 5]: CD_7->[I] : 0.002826946071000001
+# Scanning [4, 5]: NN_1->[I] : 5.209865399999996E-5
+# Scanning [4, 5]: NNP_18->[I] : 1.032511900000001E-5
+# Scanning [4, 5]: VBG_21->[I] : 1.0495320000000003E-6
+# Scanning [4, 5]: NN_22->[I] : 2.313693430000002E-4
+# Scanning [4, 5]: NN_2->[I] : 4.989508569999999E-4
+# Scanning [4, 5]: VBG_18->[I] : 9.443437999999996E-5
+# Scanning [4, 5]: NN_28->[I] : 1.1092350599999994E-4
+# Scanning [4, 5]: JJ_21->[I] : 6.542260000000001E-7
+# Scanning [4, 5]: NNP_9->[I] : 0.001748035241
+# Scanning [4, 5]: NNP_5->[I] : 0.0025444234250000006
+# Scanning [4, 5]: NN_14->[I] : 6.152191549999999E-4
+# Scanning [4, 5]: NNP_24->[I] : 2.0676007600000008E-4
+# Scanning [4, 5]: JJ_22->[I] : 6.522309999999999E-7
+# Scanning [4, 5]: JJ_30->[I] : 8.808240499999993E-5
+# Scanning [4, 5]: PRP_2->[I] : 0.024947588318
+# Scanning [4, 5]: JJ_20->[I] : 6.526710000000003E-7
+# Scanning [4, 5]: PRP_0->[I] : 0.3188829413989999
+# Scanning [4, 5]: CD_0->[I] : 2.0706872999999986E-5
+# Scanning [4, 5]: VBG_19->[I] : 1.064818E-6
+# Scanning [4, 5]: NN_25->[I] : 9.548208600000001E-5
+# Scanning [4, 5]: JJ_27->[I] : 6.532950000000005E-7
+# Scanning [4, 5]: NN_18->[I] : 1.0114894999999996E-4
+# Scanning [4, 5]: NN_11->[I] : 4.107565599999996E-5
+# Scanning [4, 5]: NNP_28->[I] : 1.0312262999999993E-5
+# Scanning [4, 5]: NNP_12->[I] : 9.098952010000003E-4
+# Scanning [4, 5]: JJ_31->[I] : 6.572619999999995E-7
+# Scanning [4, 5]: VBG_23->[I] : 1.0509460000000008E-6
+# Scanning [4, 5]: VBG_15->[I] : 1.0494790000000001E-6
+# Scanning [4, 5]: NNP_29->[I] : 1.0343612999999996E-5
+# Scanning [4, 5]: NN_19->[I] : 0.0033056429329999986
+# Scanning [4, 5]: NN_20->[I] : 1.29142229E-4
+# Scanning [4, 5]: JJ_24->[I] : 6.530240000000004E-7
+# Scanning [4, 5]: NNP_0->[I] : 9.842585119999997E-4
+# Scanning [4, 5]: NNP_21->[I] : 1.0304574999999993E-5
+# Scanning [4, 5]: NNP_27->[I] : 1.0308526999999998E-5
+# Scanning [4, 5]: NN_21->[I] : 0.0023091871359999998
+# Scanning [4, 5]: NN_24->[I] : 8.982808700000004E-5
+# Scanning [4, 5]: JJ_17->[I] : 6.552970000000001E-7
+# Scanning [4, 5]: NNP_20->[I] : 9.947619409999997E-4
+# Scanning [4, 5]: NNP_17->[I] : 1.2276215999999997E-5
+# Scanning [4, 5]: NN_27->[I] : 9.074720000000002E-5
+# Scanning [4, 5]: NN_3->[I] : 9.362804760000004E-4
+# Scanning [4, 5]: VBG_17->[I] : 1.0498579999999998E-6
+# Scanning [4, 5]: CD_1->[I] : 2.6941049999999978E-5
+# Scanning [4, 5]: NN_8->[I] : 4.090515300000001E-5
+# to, finished chartComplete Time elapsed: 4155 ms
+# I, finished chartComplete Time elapsed: 14512 ms
+# to, finished chartPredict Time elapsed: 97013 ms
+[She, <apostrophe>d, get, to]
+prefix: 3.051299104187984E-7
+surprisal: 2.687771600030839
+stringprob: 1.1668503410158704E-12
+# 5	whisk,  numTags=77
+# Scanning [4, 5]: NN_25->[whisk] : 3.6705359999999983E-6
+# Scanning [4, 5]: VB_25->[whisk] : 1.451207999999999E-6
+# Scanning [4, 5]: NN_18->[whisk] : 2.8197349999999998E-6
+# Scanning [4, 5]: VB_17->[whisk] : 1.8142419999999985E-6
+# Scanning [4, 5]: NN_11->[whisk] : 4.812061000000002E-6
+# Scanning [4, 5]: VBP_2->[whisk] : 1.4820749999999997E-6
+# Scanning [4, 5]: VB_18->[whisk] : 2.2890402000000016E-5
+# Scanning [4, 5]: VBP_19->[whisk] : 1.9877681000000016E-5
+# Scanning [4, 5]: VB_3->[whisk] : 4.227284000000001E-6
+# Scanning [4, 5]: VB_6->[whisk] : 5.893638999999998E-6
+# Scanning [4, 5]: VB_26->[whisk] : 1.7572829999999994E-6
+# Scanning [4, 5]: VB_14->[whisk] : 7.656294000000002E-6
+# Scanning [4, 5]: NN_15->[whisk] : 7.018904999999995E-6
+# Scanning [4, 5]: VBP_1->[whisk] : 2.3269070000000002E-5
+# Scanning [4, 5]: NN_10->[whisk] : 1.5385560000000002E-6
+# Scanning [4, 5]: NN_14->[whisk] : 5.722983000000005E-6
+# Scanning [4, 5]: NN_28->[whisk] : 2.4141020000000016E-6
+# Scanning [4, 5]: VB_24->[whisk] : 1.3274660000000001E-6
+# Scanning [4, 5]: NN_22->[whisk] : 4.236838999999999E-6
+# Scanning [4, 5]: NN_2->[whisk] : 1.9571779999999986E-6
+# Scanning [4, 5]: VBP_12->[whisk] : 9.296558000000004E-6
+# Scanning [4, 5]: VB_8->[whisk] : 7.834759000000005E-6
+# Scanning [4, 5]: NN_0->[whisk] : 2.860904E-6
+# Scanning [4, 5]: NN_1->[whisk] : 2.6089520000000007E-6
+# Scanning [4, 5]: VB_27->[whisk] : 1.7118412999999997E-5
+# Scanning [4, 5]: NN_23->[whisk] : 1.5526009999999991E-6
+# Scanning [4, 5]: VB_11->[whisk] : 2.1257685000000004E-5
+# Scanning [4, 5]: VB_0->[whisk] : 2.3777928999999984E-5
+# Scanning [4, 5]: VBP_0->[whisk] : 1.223601000000001E-6
+# Scanning [4, 5]: NN_6->[whisk] : 1.960201E-6
+# Scanning [4, 5]: NN_26->[whisk] : 5.207121000000004E-6
+# Scanning [4, 5]: VBP_15->[whisk] : 4.7506360000000026E-6
+# Scanning [4, 5]: NN_12->[whisk] : 1.9828710000000004E-6
+# Scanning [4, 5]: NN_9->[whisk] : 2.879124999999999E-6
+# Scanning [4, 5]: NN_4->[whisk] : 1.2861819999999996E-6
+# Scanning [4, 5]: VB_10->[whisk] : 9.099816000000001E-6
+# Scanning [4, 5]: VB_16->[whisk] : 1.6982039999999994E-6
+# Scanning [4, 5]: VB_7->[whisk] : 3.0912053999999986E-5
+# Scanning [4, 5]: VB_20->[whisk] : 1.353933000000001E-6
+# Scanning [4, 5]: VBP_14->[whisk] : 1.2340020999999991E-5
+# Scanning [4, 5]: VBP_7->[whisk] : 9.672599999999991E-7
+# Scanning [4, 5]: VB_5->[whisk] : 1.2754200999999992E-5
+# Scanning [4, 5]: VB_9->[whisk] : 1.5085098000000005E-5
+# Scanning [4, 5]: VB_22->[whisk] : 2.6946100000000007E-6
+# Scanning [4, 5]: VB_19->[whisk] : 2.468647E-6
+# Scanning [4, 5]: VBP_3->[whisk] : 5.181820000000003E-7
+# Scanning [4, 5]: VB_13->[whisk] : 6.539941999999995E-6
+# Scanning [4, 5]: VB_12->[whisk] : 1.3212692000000008E-5
+# Scanning [4, 5]: NN_8->[whisk] : 1.3097740000000011E-6
+# Scanning [4, 5]: VBP_8->[whisk] : 5.5921211E-5
+# Scanning [4, 5]: VB_4->[whisk] : 7.2925300000000005E-6
+# Scanning [4, 5]: NN_27->[whisk] : 2.3146719999999984E-6
+# Scanning [4, 5]: VB_21->[whisk] : 2.949599000000001E-6
+# Scanning [4, 5]: NN_3->[whisk] : 1.573297000000001E-6
+# Scanning [4, 5]: VB_1->[whisk] : 8.527174999999997E-6
+# Scanning [4, 5]: VBP_5->[whisk] : 1.6757529999999992E-6
+# Scanning [4, 5]: VBP_6->[whisk] : 2.743977000000002E-6
+# Scanning [4, 5]: VBP_16->[whisk] : 1.7985833E-5
+# Scanning [4, 5]: NN_7->[whisk] : 5.231551000000003E-6
+# Scanning [4, 5]: VB_2->[whisk] : 3.838714999999998E-6
+# Scanning [4, 5]: VB_23->[whisk] : 3.8313432999999975E-5
+# Scanning [4, 5]: VBP_9->[whisk] : 2.7252978999999997E-5
+# Scanning [4, 5]: NN_24->[whisk] : 3.1115939999999973E-6
+# Scanning [4, 5]: NN_17->[whisk] : 3.0485779999999993E-6
+# Scanning [4, 5]: VBP_4->[whisk] : 1.0146840000000008E-6
+# Scanning [4, 5]: NN_21->[whisk] : 1.477731999999999E-6
+# Scanning [4, 5]: VBP_17->[whisk] : 1.6922736000000012E-5
+# Scanning [4, 5]: VBP_18->[whisk] : 2.144159700000001E-5
+# Scanning [4, 5]: NN_20->[whisk] : 2.5954669999999984E-6
+# Scanning [4, 5]: NN_5->[whisk] : 2.2303289999999977E-6
+# Scanning [4, 5]: VBP_13->[whisk] : 2.1479269999999997E-5
+# Scanning [4, 5]: VBP_11->[whisk] : 5.865075E-6
+# Scanning [4, 5]: NN_19->[whisk] : 3.5385340000000023E-6
+# Scanning [4, 5]: VBP_10->[whisk] : 1.2230749999999991E-5
+# Scanning [4, 5]: NN_16->[whisk] : 2.9915959999999976E-6
+# Scanning [4, 5]: VB_15->[whisk] : 1.0111794E-5
+# Scanning [4, 5]: NN_13->[whisk] : 2.118359999999999E-6
+# whisk, finished chartComplete Time elapsed: 21504 ms
+# in, finished chartPredict Time elapsed: 653700 ms
+[The, horse, had, taken, in]
+prefix: 7.66264380813093E-10
+surprisal: 3.5833674602054266
+stringprob: 9.99414223918124E-15
+# 6	weird,  numTags=105
+# Scanning [5, 6]: JJ_9->[weird] : 6.954997399999996E-5
+# Scanning [5, 6]: NNS_12->[weird] : 6.225100000000005E-6
+# Scanning [5, 6]: JJ_31->[weird] : 0.001102710152
+# Scanning [5, 6]: NNP_12->[weird] : 4.632695E-6
+# Scanning [5, 6]: VBZ_18->[weird] : 8.01345E-6
+# Scanning [5, 6]: NNS_2->[weird] : 5.035905E-6
+# Scanning [5, 6]: NN_20->[weird] : 1.1467699999999998E-7
+# Scanning [5, 6]: NN_21->[weird] : 1.0011300000000018E-7
+# Scanning [5, 6]: JJ_24->[weird] : 0.0011543440050000005
+# Scanning [5, 6]: NNS_21->[weird] : 6.266729999999997E-6
+# Scanning [5, 6]: NNP_0->[weird] : 4.636749000000004E-6
+# Scanning [5, 6]: JJ_17->[weird] : 4.291233219999999E-4
+# Scanning [5, 6]: VBZ_10->[weird] : 5.639952000000002E-6
+# Scanning [5, 6]: JJ_2->[weird] : 2.0131275400000004E-4
+# Scanning [5, 6]: JJ_0->[weird] : 0.004087659575999998
+# Scanning [5, 6]: NN_3->[weird] : 5.636780000000003E-7
+# Scanning [5, 6]: NNS_23->[weird] : 6.239301E-6
+# Scanning [5, 6]: VBZ_14->[weird] : 5.633353999999997E-6
+# Scanning [5, 6]: NNS_25->[weird] : 6.647775E-6
+# Scanning [5, 6]: JJ_11->[weird] : 0.0010369897090000003
+# Scanning [5, 6]: NN_8->[weird] : 5.550950000000002E-7
+# Scanning [5, 6]: VBZ_9->[weird] : 7.663706E-6
+# Scanning [5, 6]: JJ_4->[weird] : 3.9122509199999994E-4
+# Scanning [5, 6]: NNS_0->[weird] : 5.024894999999998E-6
+# Scanning [5, 6]: JJ_19->[weird] : 3.326372959999998E-4
+# Scanning [5, 6]: JJ_15->[weird] : 4.7685065700000005E-4
+# Scanning [5, 6]: JJ_18->[weird] : 6.53263661E-4
+# Scanning [5, 6]: NNP_1->[weird] : 4.662771000000002E-6
+# Scanning [5, 6]: JJ_25->[weird] : 8.643836819999998E-4
+# Scanning [5, 6]: NN_6->[weird] : 6.099890000000002E-7
+# Scanning [5, 6]: NNP_8->[weird] : 4.710849000000003E-6
+# Scanning [5, 6]: NN_12->[weird] : 5.614230000000004E-7
+# Scanning [5, 6]: JJ_6->[weird] : 0.0013008508650000001
+# Scanning [5, 6]: JJ_5->[weird] : 2.127035490000001E-4
+# Scanning [5, 6]: NNP_10->[weird] : 4.707401000000001E-6
+# Scanning [5, 6]: NN_1->[weird] : 5.558700000000002E-7
+# Scanning [5, 6]: JJ_21->[weird] : 9.836757129999998E-4
+# Scanning [5, 6]: NNP_9->[weird] : 4.715346999999996E-6
+# Scanning [5, 6]: NN_22->[weird] : 1.0146082000000005E-5
+# Scanning [5, 6]: NN_2->[weird] : 5.863600000000002E-7
+# Scanning [5, 6]: NNS_15->[weird] : 6.230926E-6
+# Scanning [5, 6]: VBZ_11->[weird] : 2.7210189300000013E-4
+# Scanning [5, 6]: NNS_20->[weird] : 6.228861000000002E-6
+# Scanning [5, 6]: NNS_14->[weird] : 6.225823999999995E-6
+# Scanning [5, 6]: NNP_5->[weird] : 4.639627999999999E-6
+# Scanning [5, 6]: NNS_1->[weird] : 5.026398999999996E-6
+# Scanning [5, 6]: NN_14->[weird] : 6.809329999999996E-7
+# Scanning [5, 6]: VBZ_13->[weird] : 5.640348000000004E-6
+# Scanning [5, 6]: JJ_12->[weird] : 2.1455295800000014E-4
+# Scanning [5, 6]: JJ_20->[weird] : 0.003876078059
+# Scanning [5, 6]: JJ_30->[weird] : 0.0013589105830000006
+# Scanning [5, 6]: JJ_22->[weird] : 5.270181419999997E-4
+# Scanning [5, 6]: JJ_27->[weird] : 0.0014559402100000006
+# Scanning [5, 6]: NN_11->[weird] : 1.4073070000000007E-6
+# Scanning [5, 6]: NNP_4->[weird] : 4.642639000000004E-6
+# Scanning [5, 6]: NN_13->[weird] : 6.882335199999998E-5
+# Scanning [5, 6]: JJ_10->[weird] : 5.372353599999998E-4
+# Scanning [5, 6]: JJ_23->[weird] : 7.486766600000003E-4
+# Scanning [5, 6]: NNP_2->[weird] : 3.79830244E-4
+# Scanning [5, 6]: JJ_1->[weird] : 4.691336760000001E-4
+# Scanning [5, 6]: JJ_3->[weird] : 7.606304200000006E-5
+# Scanning [5, 6]: NN_5->[weird] : 5.601510000000004E-7
+# Scanning [5, 6]: NNP_7->[weird] : 4.650996999999997E-6
+# Scanning [5, 6]: NNS_26->[weird] : 6.2353630000000035E-6
+# Scanning [5, 6]: NNS_6->[weird] : 4.5140372300000016E-4
+# Scanning [5, 6]: NNS_13->[weird] : 6.228613E-6
+# Scanning [5, 6]: NNS_22->[weird] : 6.230985000000004E-6
+# Scanning [5, 6]: JJ_29->[weird] : 0.003058506890999999
+# Scanning [5, 6]: NNS_9->[weird] : 5.026482000000002E-6
+# Scanning [5, 6]: NNS_8->[weird] : 5.031017999999997E-6
+# Scanning [5, 6]: VBZ_16->[weird] : 2.3525901600000019E-4
+# Scanning [5, 6]: JJ_26->[weird] : 0.0016556995510000005
+# Scanning [5, 6]: NNS_18->[weird] : 6.254353000000002E-6
+# Scanning [5, 6]: NN_7->[weird] : 5.555190000000004E-7
+# Scanning [5, 6]: NNS_19->[weird] : 6.443368000000004E-6
+# Scanning [5, 6]: NNP_13->[weird] : 4.6440369999999995E-6
+# Scanning [5, 6]: JJ_14->[weird] : 8.516192800000003E-5
+# Scanning [5, 6]: JJ_7->[weird] : 1.3208025899999996E-4
+# Scanning [5, 6]: NNP_11->[weird] : 4.769232999999999E-6
+# Scanning [5, 6]: NNS_3->[weird] : 5.024422E-6
+# Scanning [5, 6]: JJ_16->[weird] : 8.350290949999998E-4
+# Scanning [5, 6]: NNP_15->[weird] : 4.639846000000003E-6
+# Scanning [5, 6]: VBZ_19->[weird] : 6.680007E-6
+# Scanning [5, 6]: JJ_28->[weird] : 0.004471096746000002
+# Scanning [5, 6]: NNP_14->[weird] : 4.644713999999997E-6
+# Scanning [5, 6]: NNS_5->[weird] : 5.028394E-6
+# Scanning [5, 6]: VBZ_15->[weird] : 5.635235000000003E-6
+# Scanning [5, 6]: VBZ_17->[weird] : 5.670445999999997E-6
+# Scanning [5, 6]: NNS_7->[weird] : 5.454258E-6
+# Scanning [5, 6]: JJ_13->[weird] : 1.800889299999999E-4
+# Scanning [5, 6]: NN_9->[weird] : 5.923639999999996E-7
+# Scanning [5, 6]: NN_4->[weird] : 5.592619999999998E-7
+# Scanning [5, 6]: NN_0->[weird] : 5.562960000000005E-7
+# Scanning [5, 6]: JJ_8->[weird] : 7.731682199999998E-5
+# Scanning [5, 6]: NNS_4->[weird] : 5.0255960000000005E-6
+# Scanning [5, 6]: NNS_24->[weird] : 8.402174060000001E-4
+# Scanning [5, 6]: VBZ_12->[weird] : 5.635594999999997E-6
+# Scanning [5, 6]: NNS_11->[weird] : 6.2257499999999946E-6
+# Scanning [5, 6]: NN_15->[weird] : 3.6121500000000023E-7
+# Scanning [5, 6]: NNS_17->[weird] : 6.222937E-6
+# Scanning [5, 6]: NN_10->[weird] : 5.558430000000003E-7
+# Scanning [5, 6]: NNS_10->[weird] : 5.0189760000000024E-6
+# Scanning [5, 6]: NNS_16->[weird] : 6.655703000000001E-6
+# Scanning [5, 6]: NNP_6->[weird] : 4.64923E-6
+# Scanning [5, 6]: NNP_3->[weird] : 2.5023844000000004E-4
+# to, finished chartPredict Time elapsed: 7626 ms
+[The, others, she, decided, to]
+prefix: 1.2877590977559763E-10
+surprisal: 0.7954306278733653
+stringprob: 1.4078530478569893E-16
+# 6	do,  numTags=49
+# Scanning [5, 6]: VBP_18->[do] : 0.003132044542999999
+# Scanning [5, 6]: VBP_11->[do] : 0.03943041271099999
+# Scanning [5, 6]: VBP_13->[do] : 0.008979999890999997
+# Scanning [5, 6]: VBP_4->[do] : 0.014573862061999995
+# Scanning [5, 6]: VBP_17->[do] : 0.0027749834059999996
+# Scanning [5, 6]: VBP_10->[do] : 0.010710309428999998
+# Scanning [5, 6]: VB_15->[do] : 0.008810468012
+# Scanning [5, 6]: VB_21->[do] : 0.029479540466000004
+# Scanning [5, 6]: VB_4->[do] : 0.011150121928000002
+# Scanning [5, 6]: VBP_5->[do] : 0.016850106783999994
+# Scanning [5, 6]: VB_1->[do] : 0.08108678760900001
+# Scanning [5, 6]: VB_12->[do] : 0.007524663497000002
+# Scanning [5, 6]: VB_13->[do] : 0.029486526076000004
+# Scanning [5, 6]: VBP_8->[do] : 0.005885053498999997
+# Scanning [5, 6]: RP_0->[do] : 7.1717570000000055E-6
+# Scanning [5, 6]: VBP_9->[do] : 0.070909087539
+# Scanning [5, 6]: VBP_6->[do] : 0.019226619658999997
+# Scanning [5, 6]: VB_23->[do] : 0.003678110459999999
+# Scanning [5, 6]: VB_2->[do] : 0.030407242311999993
+# Scanning [5, 6]: VBP_16->[do] : 0.010125423130000002
+# Scanning [5, 6]: VBP_0->[do] : 0.81684619415
+# Scanning [5, 6]: VB_11->[do] : 0.003702594004
+# Scanning [5, 6]: VB_0->[do] : 0.006658226638999999
+# Scanning [5, 6]: VB_10->[do] : 0.026282151884000002
+# Scanning [5, 6]: VBP_15->[do] : 0.003319419627
+# Scanning [5, 6]: VB_8->[do] : 0.07314653891200001
+# Scanning [5, 6]: VB_27->[do] : 0.0021753021599999994
+# Scanning [5, 6]: VB_9->[do] : 0.042731922561999994
+# Scanning [5, 6]: VBP_3->[do] : 0.020013078124000005
+# Scanning [5, 6]: VB_19->[do] : 0.09076040916200001
+# Scanning [5, 6]: VB_22->[do] : 0.004022094382999999
+# Scanning [5, 6]: VB_20->[do] : 0.008087186854999996
+# Scanning [5, 6]: VB_7->[do] : 0.003226001978
+# Scanning [5, 6]: VB_16->[do] : 0.018881474502000003
+# Scanning [5, 6]: VBP_7->[do] : 0.015492430583999994
+# Scanning [5, 6]: VB_5->[do] : 0.048999496511
+# Scanning [5, 6]: VBP_14->[do] : 0.013339690235999995
+# Scanning [5, 6]: VB_14->[do] : 0.027844096793999993
+# Scanning [5, 6]: VB_26->[do] : 0.0042870974
+# Scanning [5, 6]: VB_6->[do] : 0.003716846484000001
+# Scanning [5, 6]: VBP_19->[do] : 0.004606420116999998
+# Scanning [5, 6]: VB_3->[do] : 0.007548066297999999
+# Scanning [5, 6]: VB_17->[do] : 0.004065351455000002
+# Scanning [5, 6]: VB_25->[do] : 0.004522594939000001
+# Scanning [5, 6]: VBP_2->[do] : 0.024612946696000004
+# Scanning [5, 6]: VB_18->[do] : 0.002507100839
+# Scanning [5, 6]: VB_24->[do] : 0.0031642134000000005
+# Scanning [5, 6]: VBP_12->[do] : 0.05164959653000001
+# Scanning [5, 6]: VBP_1->[do] : 0.035150673751000006
+# weird, finished chartComplete Time elapsed: 23729 ms
+# do, finished chartComplete Time elapsed: 3232 ms
+# I, finished chartPredict Time elapsed: 71913 ms
+[I, taunted, them, ;, I]
+prefix: 1.1346248631259975E-11
+surprisal: 2.44907063251328
+stringprob: 2.480509571831257E-18
+# 6	seemed,  numTags=61
+# Scanning [5, 6]: VBD_1->[seemed] : 0.0013893360460000002
+# Scanning [5, 6]: VBN_7->[seemed] : 3.854865899999998E-5
+# Scanning [5, 6]: VBN_5->[seemed] : 4.8087439399999984E-4
+# Scanning [5, 6]: VBD_0->[seemed] : 0.0015912249719999998
+# Scanning [5, 6]: NN_25->[seemed] : 2.2462327999999986E-5
+# Scanning [5, 6]: NN_18->[seemed] : 1.9226399999999993E-7
+# Scanning [5, 6]: VBD_19->[seemed] : 0.0015047436390000003
+# Scanning [5, 6]: VBN_23->[seemed] : 0.0011708779040000004
+# Scanning [5, 6]: VBN_8->[seemed] : 0.0016381640149999996
+# Scanning [5, 6]: NN_15->[seemed] : 1.9229999999999994E-7
+# Scanning [5, 6]: VBD_9->[seemed] : 0.0030884188099999997
+# Scanning [5, 6]: VBD_8->[seemed] : 0.008765935655999998
+# Scanning [5, 6]: VBD_6->[seemed] : 0.002323703805
+# Scanning [5, 6]: NN_22->[seemed] : 1.9260700000000016E-7
+# Scanning [5, 6]: VBD_12->[seemed] : 0.001599570878
+# Scanning [5, 6]: NN_28->[seemed] : 1.9229499999999994E-7
+# Scanning [5, 6]: VBD_7->[seemed] : 0.019585805720000002
+# Scanning [5, 6]: VBN_13->[seemed] : 8.191213020000003E-4
+# Scanning [5, 6]: NN_26->[seemed] : 2.0658799999999997E-7
+# Scanning [5, 6]: VBN_21->[seemed] : 4.1601344599999997E-4
+# Scanning [5, 6]: VBD_13->[seemed] : 0.0015309285169999996
+# Scanning [5, 6]: VBD_16->[seemed] : 0.002041387727
+# Scanning [5, 6]: NN_23->[seemed] : 1.9302799999999984E-7
+# Scanning [5, 6]: VBD_21->[seemed] : 0.004602435602
+# Scanning [5, 6]: VBN_1->[seemed] : 3.5439080000000016E-5
+# Scanning [5, 6]: VBN_6->[seemed] : 9.220780000000006E-5
+# Scanning [5, 6]: VBN_16->[seemed] : 0.006468145583000001
+# Scanning [5, 6]: VBN_2->[seemed] : 9.083294900000007E-5
+# Scanning [5, 6]: VBD_5->[seemed] : 0.005428778779000001
+# Scanning [5, 6]: VBN_18->[seemed] : 0.013221249419000006
+# Scanning [5, 6]: VBD_17->[seemed] : 0.012235033183999999
+# Scanning [5, 6]: VBD_18->[seemed] : 0.13824734491099996
+# Scanning [5, 6]: VBN_9->[seemed] : 4.2442084E-5
+# Scanning [5, 6]: VBD_2->[seemed] : 0.0021002346520000003
+# Scanning [5, 6]: VBN_10->[seemed] : 3.669080199999998E-5
+# Scanning [5, 6]: VBN_17->[seemed] : 0.004983105405
+# Scanning [5, 6]: VBD_14->[seemed] : 0.001580877178
+# Scanning [5, 6]: VBN_20->[seemed] : 4.308321090000002E-4
+# Scanning [5, 6]: VBN_19->[seemed] : 0.0015051802100000005
+# Scanning [5, 6]: NN_27->[seemed] : 1.924949999999999E-7
+# Scanning [5, 6]: VBD_20->[seemed] : 0.002005529519
+# Scanning [5, 6]: VBN_11->[seemed] : 3.634597E-5
+# Scanning [5, 6]: NN_24->[seemed] : 1.9579999999999991E-7
+# Scanning [5, 6]: VBN_22->[seemed] : 5.578253660000002E-4
+# Scanning [5, 6]: VBD_4->[seemed] : 0.051843452548999996
+# Scanning [5, 6]: NN_17->[seemed] : 1.9217900000000002E-7
+# Scanning [5, 6]: NN_21->[seemed] : 1.9287399999999993E-7
+# Scanning [5, 6]: VBD_3->[seemed] : 0.0013955322229999997
+# Scanning [5, 6]: VBN_4->[seemed] : 3.571654800000003E-5
+# Scanning [5, 6]: VBN_0->[seemed] : 3.5591442999999983E-5
+# Scanning [5, 6]: NN_19->[seemed] : 1.921779999999999E-7
+# Scanning [5, 6]: VBN_15->[seemed] : 0.0015558336960000004
+# Scanning [5, 6]: NN_20->[seemed] : 1.9215699999999989E-7
+# Scanning [5, 6]: VBD_10->[seemed] : 0.008535780629
+# Scanning [5, 6]: VBD_15->[seemed] : 0.0020811797910000006
+# Scanning [5, 6]: NN_16->[seemed] : 1.921690000000001E-7
+# Scanning [5, 6]: VBN_3->[seemed] : 3.661287599999999E-5
+# Scanning [5, 6]: VBD_22->[seemed] : 0.0018394192629999997
+# Scanning [5, 6]: VBN_12->[seemed] : 5.419013610000001E-4
+# Scanning [5, 6]: VBN_14->[seemed] : 9.86692972E-4
+# Scanning [5, 6]: VBD_11->[seemed] : 0.003116358997000001
+# seemed, finished chartComplete Time elapsed: 26762 ms
+# whisk, finished chartPredict Time elapsed: 109395 ms
+[She, <apostrophe>d, get, to, whisk]
+prefix: 1.353022371499158E-12
+surprisal: 12.326152016915033
+stringprob: 7.282722362676194E-17
+# 6	earlier,  numTags=94
+# Scanning [5, 6]: RB_13->[earlier] : 3.426803199999999E-5
+# Scanning [5, 6]: RB_0->[earlier] : 4.933421299999996E-5
+# Scanning [5, 6]: NN_10->[earlier] : 2.751919999999998E-7
+# Scanning [5, 6]: RB_10->[earlier] : 3.394875099999999E-5
+# Scanning [5, 6]: NN_14->[earlier] : 2.3054310000000006E-6
+# Scanning [5, 6]: RB_3->[earlier] : 2.3197992200000005E-4
+# Scanning [5, 6]: RB_20->[earlier] : 3.699926199999999E-5
+# Scanning [5, 6]: NN_15->[earlier] : 1.5660399999999994E-7
+# Scanning [5, 6]: RB_25->[earlier] : 3.5227574000000004E-5
+# Scanning [5, 6]: NN_22->[earlier] : 1.7070010000000012E-5
+# Scanning [5, 6]: NN_2->[earlier] : 2.858610000000002E-7
+# Scanning [5, 6]: RB_15->[earlier] : 3.4973165999999986E-5
+# Scanning [5, 6]: RB_4->[earlier] : 3.7678372E-5
+# Scanning [5, 6]: NN_28->[earlier] : 1.8715800000000012E-7
+# Scanning [5, 6]: JJ_21->[earlier] : 7.997479999999995E-7
+# Scanning [5, 6]: JJR_1->[earlier] : 0.036255489901
+# Scanning [5, 6]: RB_17->[earlier] : 3.2792397E-5
+# Scanning [5, 6]: RB_16->[earlier] : 3.311107699999999E-5
+# Scanning [5, 6]: NN_25->[earlier] : 1.6113299999999986E-7
+# Scanning [5, 6]: JJ_27->[earlier] : 8.222210000000005E-7
+# Scanning [5, 6]: NN_18->[earlier] : 1.59288E-7
+# Scanning [5, 6]: NN_11->[earlier] : 2.7483299999999985E-7
+# Scanning [5, 6]: JJ_22->[earlier] : 7.993659999999999E-7
+# Scanning [5, 6]: JJ_30->[earlier] : 8.024600000000006E-7
+# Scanning [5, 6]: JJ_12->[earlier] : 5.692140000000004E-6
+# Scanning [5, 6]: JJ_20->[earlier] : 7.995890000000005E-7
+# Scanning [5, 6]: RB_14->[earlier] : 3.290408899999997E-5
+# Scanning [5, 6]: JJ_15->[earlier] : 7.561633999999994E-6
+# Scanning [5, 6]: JJ_18->[earlier] : 1.0678832500000006E-4
+# Scanning [5, 6]: JJR_0->[earlier] : 0.004739277391000001
+# Scanning [5, 6]: RB_22->[earlier] : 4.09554025E-4
+# Scanning [5, 6]: RB_18->[earlier] : 3.280117699999998E-5
+# Scanning [5, 6]: JJ_19->[earlier] : 1.902377E-6
+# Scanning [5, 6]: JJ_4->[earlier] : 1.2639174000000008E-5
+# Scanning [5, 6]: JJ_28->[earlier] : 8.003160000000003E-7
+# Scanning [5, 6]: JJR_2->[earlier] : 9.663372300000005E-5
+# Scanning [5, 6]: RB_11->[earlier] : 3.415700999999998E-5
+# Scanning [5, 6]: RBR_2->[earlier] : 0.09243236735800002
+# Scanning [5, 6]: RB_24->[earlier] : 0.0027412818760000003
+# Scanning [5, 6]: RB_1->[earlier] : 0.002939154334999999
+# Scanning [5, 6]: JJ_8->[earlier] : 5.817671000000004E-6
+# Scanning [5, 6]: NN_1->[earlier] : 2.7784699999999983E-7
+# Scanning [5, 6]: NN_0->[earlier] : 3.385380000000003E-7
+# Scanning [5, 6]: JJ_13->[earlier] : 5.675517999999999E-6
+# Scanning [5, 6]: NN_12->[earlier] : 2.731759999999998E-7
+# Scanning [5, 6]: NN_26->[earlier] : 1.7526099999999997E-7
+# Scanning [5, 6]: JJ_5->[earlier] : 6.592002999999999E-6
+# Scanning [5, 6]: NN_4->[earlier] : 2.82825E-7
+# Scanning [5, 6]: NN_9->[earlier] : 2.743320000000001E-7
+# Scanning [5, 6]: JJ_6->[earlier] : 5.7010549999999955E-6
+# Scanning [5, 6]: NN_23->[earlier] : 1.5827300000000006E-7
+# Scanning [5, 6]: JJ_25->[earlier] : 8.004679999999999E-7
+# Scanning [5, 6]: NN_6->[earlier] : 3.071950000000002E-7
+# Scanning [5, 6]: NN_7->[earlier] : 2.7289099999999987E-7
+# Scanning [5, 6]: JJ_26->[earlier] : 8.006379999999996E-7
+# Scanning [5, 6]: RB_12->[earlier] : 3.709998599999999E-5
+# Scanning [5, 6]: RB_6->[earlier] : 3.6525687999999995E-4
+# Scanning [5, 6]: JJ_29->[earlier] : 7.99617E-7
+# Scanning [5, 6]: NN_24->[earlier] : 1.6052900000000005E-7
+# Scanning [5, 6]: RB_2->[earlier] : 3.5673586299999997E-4
+# Scanning [5, 6]: JJ_17->[earlier] : 7.993410000000004E-7
+# Scanning [5, 6]: RB_7->[earlier] : 3.862137599999998E-5
+# Scanning [5, 6]: NN_8->[earlier] : 2.7257799999999997E-7
+# Scanning [5, 6]: JJ_16->[earlier] : 7.994489999999994E-7
+# Scanning [5, 6]: JJ_11->[earlier] : 5.698401E-6
+# Scanning [5, 6]: RB_8->[earlier] : 1.3799697100000006E-4
+# Scanning [5, 6]: RB_21->[earlier] : 4.7270258E-5
+# Scanning [5, 6]: JJ_7->[earlier] : 5.909812000000002E-6
+# Scanning [5, 6]: NN_27->[earlier] : 1.5803900000000014E-7
+# Scanning [5, 6]: JJ_2->[earlier] : 2.3428855800000002E-4
+# Scanning [5, 6]: NN_3->[earlier] : 2.8665699999999976E-7
+# Scanning [5, 6]: JJ_0->[earlier] : 6.877888999999994E-6
+# Scanning [5, 6]: JJ_14->[earlier] : 5.673271999999997E-6
+# Scanning [5, 6]: RB_5->[earlier] : 5.4228547E-5
+# Scanning [5, 6]: NN_16->[earlier] : 1.5649200000000002E-7
+# Scanning [5, 6]: JJ_10->[earlier] : 6.438477999999998E-6
+# Scanning [5, 6]: JJ_31->[earlier] : 8.001380000000005E-7
+# Scanning [5, 6]: JJ_23->[earlier] : 7.994089999999995E-7
+# Scanning [5, 6]: NN_13->[earlier] : 2.81089E-7
+# Scanning [5, 6]: JJ_9->[earlier] : 5.720749999999996E-6
+# Scanning [5, 6]: RB_23->[earlier] : 1.35277241E-4
+# Scanning [5, 6]: RB_19->[earlier] : 3.3275059999999986E-5
+# Scanning [5, 6]: RBR_1->[earlier] : 0.026800547354000004
+# Scanning [5, 6]: JJ_24->[earlier] : 8.00332E-7
+# Scanning [5, 6]: RBR_0->[earlier] : 0.167831241913
+# Scanning [5, 6]: NN_21->[earlier] : 8.909139999999999E-7
+# Scanning [5, 6]: NN_17->[earlier] : 1.8882700000000013E-7
+# Scanning [5, 6]: NN_5->[earlier] : 3.215908799999999E-5
+# Scanning [5, 6]: JJR_3->[earlier] : 7.414546320000002E-4
+# Scanning [5, 6]: NN_19->[earlier] : 1.5914700000000002E-7
+# Scanning [5, 6]: JJ_1->[earlier] : 6.324396000000002E-6
+# Scanning [5, 6]: RB_9->[earlier] : 6.195340299999996E-5
+# Scanning [5, 6]: NN_20->[earlier] : 5.615480000000001E-7
+# Scanning [5, 6]: JJ_3->[earlier] : 5.24420388E-4
+# earlier, finished chartComplete Time elapsed: 32219 ms
+# do, finished chartPredict Time elapsed: 640818 ms
+[The, others, she, decided, to, do]
+prefix: 3.7755227158689116E-12
+surprisal: 3.529534919378058
+stringprob: 1.6491455386744045E-16
+# 7	that,  numTags=83
+# Scanning [6, 7]: DT_0->[that] : 0.010692299570999994
+# Scanning [6, 7]: VBZ_18->[that] : 8.591949999999994E-7
+# Scanning [6, 7]: RB_5->[that] : 6.706410099999998E-5
+# Scanning [6, 7]: IN_9->[that] : 5.798329999999998E-7
+# Scanning [6, 7]: IN_19->[that] : 0.675838388038
+# Scanning [6, 7]: RB_23->[that] : 6.838143740000001E-4
+# Scanning [6, 7]: IN_10->[that] : 1.3794729999999996E-6
+# Scanning [6, 7]: RB_19->[that] : 5.063151209999999E-4
+# Scanning [6, 7]: DT_12->[that] : 0.06378855324700002
+# Scanning [6, 7]: DT_8->[that] : 0.017415309007
+# Scanning [6, 7]: IN_11->[that] : 0.0068489085779999985
+# Scanning [6, 7]: IN_20->[that] : 0.017347018978
+# Scanning [6, 7]: RB_9->[that] : 5.3339235999999964E-5
+# Scanning [6, 7]: IN_8->[that] : 5.72322E-7
+# Scanning [6, 7]: DT_2->[that] : 0.11903530372299999
+# Scanning [6, 7]: DT_11->[that] : 0.010112367673999999
+# Scanning [6, 7]: RB_12->[that] : 6.067749999999995E-5
+# Scanning [6, 7]: RB_6->[that] : 5.979968499999998E-5
+# Scanning [6, 7]: VBZ_16->[that] : 7.740653900000001E-5
+# Scanning [6, 7]: IN_15->[that] : 0.007967833176000002
+# Scanning [6, 7]: IN_14->[that] : 0.009724820214000002
+# Scanning [6, 7]: RB_2->[that] : 0.001605627476
+# Scanning [6, 7]: WDT_1->[that] : 0.7430398402
+# Scanning [6, 7]: DT_1->[that] : 0.009813886877000001
+# Scanning [6, 7]: IN_0->[that] : 1.1207130000000005E-6
+# Scanning [6, 7]: RB_7->[that] : 5.335614500000002E-5
+# Scanning [6, 7]: RB_8->[that] : 5.631301599999998E-5
+# Scanning [6, 7]: DT_17->[that] : 0.004525254972
+# Scanning [6, 7]: DT_14->[that] : 1.440644649999999E-4
+# Scanning [6, 7]: DT_6->[that] : 0.008940556966999996
+# Scanning [6, 7]: RB_21->[that] : 0.026585259248
+# Scanning [6, 7]: IN_2->[that] : 8.734300000000001E-7
+# Scanning [6, 7]: DT_15->[that] : 1.632122480000001E-4
+# Scanning [6, 7]: DT_10->[that] : 0.021131411721000002
+# Scanning [6, 7]: VBZ_14->[that] : 8.597010000000002E-7
+# Scanning [6, 7]: VBZ_10->[that] : 8.607280000000007E-7
+# Scanning [6, 7]: IN_18->[that] : 0.034288270493
+# Scanning [6, 7]: RB_14->[that] : 3.4705398599999996E-4
+# Scanning [6, 7]: DT_13->[that] : 1.3786444099999988E-4
+# Scanning [6, 7]: RB_22->[that] : 9.319167800000003E-4
+# Scanning [6, 7]: RB_18->[that] : 2.949168799999999E-4
+# Scanning [6, 7]: DT_16->[that] : 8.181587069999998E-4
+# Scanning [6, 7]: DT_7->[that] : 0.014034113541000006
+# Scanning [6, 7]: IN_16->[that] : 0.006952715261000003
+# Scanning [6, 7]: VBZ_19->[that] : 8.595869999999998E-7
+# Scanning [6, 7]: VBZ_9->[that] : 8.594999999999996E-7
+# Scanning [6, 7]: RB_11->[that] : 5.286084300000002E-5
+# Scanning [6, 7]: IN_17->[that] : 0.019430348347000005
+# Scanning [6, 7]: RB_24->[that] : 5.884001159999997E-4
+# Scanning [6, 7]: RB_1->[that] : 0.004054313270999998
+# Scanning [6, 7]: IN_1->[that] : 7.313800000000004E-7
+# Scanning [6, 7]: IN_23->[that] : 0.008114441312000002
+# Scanning [6, 7]: WDT_2->[that] : 0.141150005518
+# Scanning [6, 7]: DT_18->[that] : 6.177971480000002E-4
+# Scanning [6, 7]: IN_22->[that] : 0.006847767018
+# Scanning [6, 7]: IN_4->[that] : 4.7510100000000025E-5
+# Scanning [6, 7]: IN_3->[that] : 1.7218019999999996E-6
+# Scanning [6, 7]: VBZ_15->[that] : 8.599940000000003E-7
+# Scanning [6, 7]: VBZ_17->[that] : 8.634780000000001E-7
+# Scanning [6, 7]: RB_13->[that] : 5.242262E-5
+# Scanning [6, 7]: RB_0->[that] : 3.3293993100000016E-4
+# Scanning [6, 7]: RB_10->[that] : 5.734423299999996E-5
+# Scanning [6, 7]: IN_13->[that] : 0.044766116876
+# Scanning [6, 7]: RB_3->[that] : 1.3927141299999995E-4
+# Scanning [6, 7]: DT_5->[that] : 0.017883843201999993
+# Scanning [6, 7]: RB_20->[that] : 6.461661089999997E-4
+# Scanning [6, 7]: VBZ_11->[that] : 8.600570000000006E-7
+# Scanning [6, 7]: RB_25->[that] : 3.5843239899999987E-4
+# Scanning [6, 7]: RB_15->[that] : 4.7489551800000007E-4
+# Scanning [6, 7]: DT_3->[that] : 0.649868514849
+# Scanning [6, 7]: RB_4->[that] : 5.229676699999996E-5
+# Scanning [6, 7]: IN_6->[that] : 6.580480000000003E-7
+# Scanning [6, 7]: VBZ_12->[that] : 8.600510000000007E-7
+# Scanning [6, 7]: DT_4->[that] : 0.042212220934000004
+# Scanning [6, 7]: RB_17->[that] : 2.9130795E-4
+# Scanning [6, 7]: DT_9->[that] : 0.022049523525
+# Scanning [6, 7]: RB_16->[that] : 3.360463530000001E-4
+# Scanning [6, 7]: IN_5->[that] : 6.842690000000005E-7
+# Scanning [6, 7]: IN_7->[that] : 5.922699999999997E-7
+# Scanning [6, 7]: IN_12->[that] : 0.006643908209999998
+# Scanning [6, 7]: IN_21->[that] : 0.007090869520999998
+# Scanning [6, 7]: VBZ_13->[that] : 8.60652E-7
+# Scanning [6, 7]: IN_24->[that] : 0.007185987333000002
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 2926705 ON tcn447 CANCELLED AT 2023-06-16T13:31:23 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 2926705.0 ON tcn447 CANCELLED AT 2023-06-16T13:31:23 DUE TO TIME LIMIT ***
+
+JOB STATISTICS
+==============
+Job ID: 2926705
+Cluster: snellius
+User/Group: jumelet/jumelet
+State: TIMEOUT (exit code 0)
+Nodes: 1
+Cores per node: 32
+CPU Utilized: 00:59:47
+CPU Efficiency: 3.10% of 1-08:10:40 core-walltime
+Job Wall-clock time: 01:00:20
+Memory Utilized: 20.19 GB
+Memory Efficiency: 63.11% of 32.00 GB

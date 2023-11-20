@@ -1,0 +1,40 @@
+mkdir: cannot create directory 'new_results': File exists
+Sat Jun 17 15:26:32 CEST 2023
+EarleyParser invoked with arguments [-in, data/eval_subset_100.txt, -grammar, grammars/1.0_petrov.grammar, -out, new_results/eval_subset_100, -verbose, 1, -thread, 1]
+In grammar file = grammars/1.0_petrov.grammar
+# Root symbol = ROOT
+# Objectives = surprisal,stringprob
+# isSparse = false
+# isLogProb = true
+# isScaling = false
+# decodeOpt = 
+# verbose opt = 1
+# Num threads = 1
+# Filter length = 0
+# ioOpt = 
+# maxIteration = 0
+# Input file =data/eval_subset_100.txt
+[``, been, Easy, year, Katherine, Much, Samantha, boys, your, without, building, shrugged, these, path, blacksmith, would, Simon, poor, because, ablaze, you, safely, sister, !, Maybe, sure, younger, impact, opportunity, *, ,, am, easy, ., Ruth, Here, B4, as, smiled, at, size, ;, much, pony, ?, wind, sweetly, deal, be, vantage, least, I, turn, Paul, eyes, The, rolling, As, At, extinction, grass, blocking, by, after, aggressive, close, hand, `, a, flanked, words, eating, the, tells, weird, touches, descent, lips, calling, unprecedented, Your, Yeah, eyed, returned, yours, freely, did, citizens, Again, ensconced, do, girls, down, She, leave, rare, tall, others, Circle, fantasy, need, finally, For, muttered, its, Do, upwards, onto, gone, she, never, ex, aside, Luis, acres, stared, some, tears, respecting, for, back, ride, watching, cheering, sheets, Scarlett, Stolz, duel, Rick, passed, just, live, responded, notice, over, six, go, agencies, Although, toyed, kept, room, taunted, with, there, sweat, Joey, he, very, slightly, smaller, focus, hope, bit, attempt, soon, relish, thanks, myth, heroes, grinned, struck, beside, spatial, He, if, similar, Everyone, shape, in, made, is, it, gravel, Some, driver, etc., contents, even, Aria, gave, Miriam, If, women, become, Finally, engaged, other, woman, brought, In, painted, payments, It, air, thinking, <apostrophe>ll, stream, too, have, climbed, everything, together, elegant, side, James, seemed, could, forward, knew, off, Considering, scaffold, disable, witch, Trinity, use, several, smile, that, earlier, Lights, find, Doors, me, intense, all, already, everyone, However, less, Amy, my, heart, friends, And, were, no, kissed, Any, around, running, head, and, of, troubled, met, heard, fight, direction, on, freaking, No, or, any, followed, suggested, Let, <apostrophe><apostrophe>, On, reason, silently, thought, about, Beth, buried, stood, danger, decided, beautiful, worked, extremely, Knightly, pounds, Then, let, boil, they, sandbar, Spartan, night, them, then, pack, each, horse, pointed, eye, waved, gently, Pox, Mess, circle, Bethany, shower, maybe, collapsed, another, killing, two, long, moment, serving, into, are, managed, taken, Under, where, stirred, demonstrating, situation, surprised, kids, But, necessary, slang, one, noticed, black, team, services, many, people, ..., closer, They, detectable, such, Calvin, Kitsune, dealer, closed, to, knelt, thing, Actually, Duncan, story, but, till, swung, had, gleaming, inside, mother, shook, late, There, This, has, up, Look, us, demeanor, smiling, suitcase, last, might, felt, this, whisk, look, Amanda, These, Now, know, Up, loudly, doing, away, figures, needed, amphibious, nearly, apron, banish, surroundings, house, we, life, shot, anything, sorceress, weapon, not, Michel, summoned, now, themselves, throughout, every, early, hours, green, wan, center, again, was, start, yet, We, Tuck, pair, mouth, what, Her, Every, ones, step, risk, time, Come, Blake, palm, fable, when, beyond, S??, humor, her, enter, case, softness, still, shuttled, overhead, bewildered, Captain, light, anyone, among, following, ladies, boss, artist, guard, our, confirmed, out, throwing, uniform, confess, fall, get, sentenced, <apostrophe>, dark, theme, protect, <apostrophe>s, grin, barrel, desire, spat, bigger, <apostrophe>m, continued, Doctor, <apostrophe>d, kill, clicked, lead, nice, lots, help, shirt, His, gasping, facility, uselessly, first, voice, small, <apostrophe>ve, door, before, sound, tell, Central, used, him, Cobras, his, only, should, few, goodnight, from, like, failed, towards, water, most, toilets, person, ample, n<apostrophe>t, job, here, their, radiant, relaxed, holding, can, alone, Gracie, said, unbelievable, rest, mocked, will, studied, ink, saw, groups, also, leans, really, spread, grimace, Convention, round, build, mean, edged, lectured, front, hurry, You]
+# Need to parse 100
+# LeftWildcard Edge Space
+
+## Parsing rule data ... ! Duplicate rule NNP_3->[_??]
+! adding rule NNP_3->[_??] : 2.21874e-05 conflicts with existing rule NNP_3->[_??] : 0.000561690
+srun: error: tcn232: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=2928199.0
+Sat Jun 17 15:26:33 CEST 2023
+cp: cannot stat '/scratch-local/jumelet.2928199/earleyx2/new_results/*': No such file or directory
+
+JOB STATISTICS
+==============
+Job ID: 2928199
+Cluster: snellius
+User/Group: jumelet/jumelet
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 32
+CPU Utilized: 00:00:01
+CPU Efficiency: 0.21% of 00:08:00 core-walltime
+Job Wall-clock time: 00:00:15
+Memory Utilized: 1.48 MB
+Memory Efficiency: 0.00% of 32.00 GB
