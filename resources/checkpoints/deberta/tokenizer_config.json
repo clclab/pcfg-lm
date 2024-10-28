@@ -1,5 +1,0 @@
-{
-  "clean_up_tokenization_spaces": true,
-  "model_max_length": 1000000000000000019884624838656,
-  "tokenizer_class": "CustomTokenizer"
-}

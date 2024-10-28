@@ -1,7 +1,11 @@
-import json
+from tokenizers.trainers import WordLevelTrainer
+from tokenizers import Tokenizer
+from tokenizers.models import WordLevel
+from tokenizers.pre_tokenizers import Whitespace
+from tokenizers.processors import TemplateProcessing
 
 from transformers import PreTrainedTokenizer, BertTokenizer
-from collections import Counter
+from transformers import PreTrainedTokenizerFast
 
 
 def create_tokenizer(
@@ -9,41 +13,40 @@ def create_tokenizer(
     unk_token: str = '<unk>', 
     pad_token: str = '<pad>', 
     mask_token: str = '<mask>',
+    bos_token: str = '<bos>',
     min_freq: int = 1,
+    add_bos_token: bool = False,
 ):
-    vocab = create_vocab(corpus, unk_token=unk_token, pad_token=pad_token, mask_token=mask_token, min_freq=min_freq)
+    special_tokens = [unk_token, pad_token, mask_token, bos_token]
+    tokenizer_trainer = WordLevelTrainer(min_frequency=min_freq, special_tokens=special_tokens)
+    
+    base_tokenizer = Tokenizer(WordLevel(unk_token=unk_token))
+    base_tokenizer.pre_tokenizer = Whitespace()
+    
+    base_tokenizer.train([corpus], trainer=tokenizer_trainer)
+    
+    print("Tokenizer size:", len(base_tokenizer.get_vocab()))
 
-    tokenizer = create_tf_tokenizer_from_vocab(vocab, unk_token=unk_token, pad_token=pad_token, mask_token=mask_token)
+    if add_bos_token:
+        base_tokenizer.post_processor = TemplateProcessing(
+            single=f"{bos_token} $A",
+            special_tokens=[(bos_token, base_tokenizer.token_to_id(bos_token))],
+        )
+
+    tokenizer = PreTrainedTokenizerFast(
+        tokenizer_object=base_tokenizer,
+        mask_token=mask_token,
+        pad_token=pad_token,
+        bos_token=bos_token,
+        unk_token=unk_token,
+        additional_special_tokens=special_tokens,
+    )
     
     return tokenizer
 
 
-def create_vocab(
-    corpus: str, 
-    unk_token: str = '<unk>', 
-    pad_token: str = '<pad>', 
-    mask_token: str = '<mask>',
-    min_freq: int = 1,
-):
-    with open(corpus) as f:
-        train = f.read().split('\n')
-
-    token_freqs = Counter()
-
-    for sen in train:
-        for w in sen.split():
-            token_freqs[w] += 1
-            
-    vocab = {unk_token: 0, pad_token: 1, mask_token: 2}
-    
-    for w, freq in token_freqs.most_common():
-        if freq >= min_freq:
-            vocab[w] = len(vocab)
-
-    return vocab
-
-
 class CustomTokenizer(PreTrainedTokenizer):
+    """Legacy tokenizer with custom whitespace tokenization"""
     def __len__(self):
         return len(self.vocab)
 
@@ -88,3 +91,4 @@ def load_pretrained_tokenizer(path: str):
     tokenizer = create_tf_tokenizer_from_vocab(vocab)
     
     return tokenizer
+
