@@ -50,7 +50,7 @@ def parse_pcfg_scores(path: str, flatten=False):
     return all_pcfg_scores
 
 
-def eval_lm_to_pcfg(lm_scores: torch.Tensor, pcfg_scores: torch.Tensor):
+def eval_lm_to_pcfg(lm_scores: torch.Tensor, pcfg_scores: torch.Tensor, fig_file: str):
     assert len(lm_scores) == len(pcfg_scores), f'{len(lm_scores)} != {len(pcfg_scores)}'
     
     rho = spearmanr(lm_scores, pcfg_scores)
@@ -68,8 +68,9 @@ def eval_lm_to_pcfg(lm_scores: torch.Tensor, pcfg_scores: torch.Tensor):
     plt.ylabel(r"log P$_{PCFG}(w)$")
     plt.plot([pmin, pmax], [pmin, pmax], '--', color='0.5', lw=1)
     plt.title(fr"$\rho$: {rho[0]:.3f}")
+    plt.savefig(fig_file, bbox_inches="tight")
     plt.show()
-    
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -82,5 +83,6 @@ if __name__ == "__main__":
     lm_scores = compute_clm_scores(args['corpus'],  args['model_name'], flatten=True)
     pcfg_scores = parse_pcfg_scores(args['pcfg_scores'], flatten=True)
 
-    eval_lm_to_pcfg(lm_scores, pcfg_scores)
+    fig_file = f"{args['corpus']}_{args['model_name']}.png"
+    eval_lm_to_pcfg(lm_scores, pcfg_scores, fig_file)
 
