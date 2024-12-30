@@ -17,7 +17,7 @@ if __name__ == "__main__":
         help="Train/test/dev split. Defaults to 1.0/0.0/0.0 to only generate train corpus", 
         default="1.0/0.0/0.0"
     )
-    parser.add_argument("--store_trees", help="Start symbol in PCFG", action='store_true')
+    parser.add_argument("--store_trees", help="Store trees of sampled strings", action='store_true')
     args = vars(parser.parse_args())
 
     split_ratio = tuple(map(float, args['split_ratio'].split('/')))

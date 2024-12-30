@@ -73,8 +73,8 @@ def _create_arg_parser() -> ArgumentParser:
     parser.add_argument("--trainer.weight_decay", type=float, default=0.1)
     parser.add_argument("--trainer.lr_scheduler_type", default="cosine")
     parser.add_argument("--trainer.learning_rate", type=float, default=5e-4)
-    parser.add_argument("--trainer.push_to_hub", action="store_true")
     parser.add_argument("--trainer.report_to", default="none")
+    parser.add_argument("--trainer.hub_model_id", default=None)
 
     return parser
 

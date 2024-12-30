@@ -20,12 +20,14 @@ python src/data_generation/generate.py \
     
 bash scripts/train_clm.sh \
     --data.data_dir resources/corpora/$TREEBANK_SIZE \
-    --trainer.output_dir resources/models/$TREEBANK_SIZE/ \
+    --trainer.output_dir resources/models/$TREEBANK_SIZE \
     --model.hidden_size ${HIDDEN_SIZE:-16} \
     --model.num_hidden_layers ${NUM_HIDDEN_LAYERS:-2} \
     --model.intermediate_size ${INTERMEDIATE_SIZE:-16} \
     --model.num_attention_heads ${NUM_ATTENTION_HEADS:-2} \
-    --trainer.num_train_epochs ${NUM_TRAIN_EPOCHS:-2}
+    --trainer.num_train_epochs ${NUM_TRAIN_EPOCHS:-1} \
+    --trainer.hub_model_id test \
+    --trainer.hub_token hf_token.txt
 
 bash scripts/clm_eval.sh \
     resources/grammars/nltk/${TREEBANK_SIZE}_pcfg.txt \

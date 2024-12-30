@@ -37,6 +37,11 @@ if __name__ == "__main__":
     if config_dict['trainer']['report_to'] == 'wandb':
         os.environ["WANDB_PROJECT"] = "pcfg-lm"
 
+    push_to_hub = ("hub_model_id" in config_dict['trainer'])
+    if 'hub_token' in config_dict['trainer']:
+        with open(config_dict['trainer']['hub_token']) as f:
+            config_dict['trainer']['hub_token'] = f.read().strip()
+
     trainer = initialize_trainer(
         model, 
         tokenizer, 
@@ -46,7 +51,7 @@ if __name__ == "__main__":
         group_by_length=True,
         auto_find_batch_size=False,
         do_eval=True,
-        #report_to="wandb",
+        push_to_hub=push_to_hub,
         **config_dict['trainer'],
     )
     
