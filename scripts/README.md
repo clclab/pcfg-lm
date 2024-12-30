@@ -1,10 +1,10 @@
 # Scripts for running the whole pipeline
 Script for grammar induction based on a treebank:
 ```
-induce_grammar.sh $TREEBANK_SIZE $MERGE_PERCENTAGE $SPLIT_MERGE_CYCLES
+induce_grammar.sh $TREEBANK_SIZE $MERGE_PERCENTAGE $SM_CYCLES
 ```
 
-Script for generating a corpus from the induced grammar:
+Script for generating a corpus from the induced grammar (this example is set for a grammar induced from the first 2 treebank items):
 ```
 python src/data_generation/generate.py \
     -g resources/grammars/nltk/2_pcfg.txt \
@@ -34,5 +34,5 @@ bash scripts/clm_eval.sh \
     resources/grammars/earleyx/2.grammar \
     resources/corpora/2/test.txt \
     resources/evaluation/2 \
-    resources/models/checkpoint-38/
+    resources/models/2/checkpoint-*/
 ```

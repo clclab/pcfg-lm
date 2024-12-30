@@ -66,7 +66,7 @@ def _create_arg_parser() -> ArgumentParser:
     parser.add_argument("--trainer.evaluation_strategy", default="steps")
     parser.add_argument("--trainer.eval_steps", type=int, default=100)
     parser.add_argument("--trainer.logging_steps", type=int, default=100)
-    parser.add_argument("--trainer.save_steps", type=int, default=1000)
+    parser.add_argument("--trainer.save_steps", type=int, default=100000000)
     parser.add_argument("--trainer.gradient_accumulation_steps", type=int, default=8)
     parser.add_argument("--trainer.max_grad_norm", type=int, default=0.5)
     parser.add_argument("--trainer.num_train_epochs", type=int, default=1)
