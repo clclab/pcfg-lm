@@ -34,8 +34,6 @@ if __name__ == "__main__":
     print(model)
     print('#params', sum(param.numel() for param in model.parameters()))
 
-    lr = 5e-4
-
     if config_dict['trainer']['report_to'] == 'wandb':
         os.environ["WANDB_PROJECT"] = "pcfg-lm"
 

@@ -11,12 +11,11 @@ def read_grammar_rules(path, threshold=1e-7):
         lines = [l.strip() for l in f]
 
     # skip root and A -> A recursions
-    # S_0 is start terminal!
+    # ROOT_0 is start terminal!
     non_rec_rules = [
         l
         for l in lines
         if not (l.split()[0] in l.split()[1:] and len(l.split()) == 4)
-        and not "ROOT" in l
         and float(l.split()[-1]) > threshold
     ]
 

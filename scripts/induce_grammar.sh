@@ -1,5 +1,3 @@
-cd ..
-
 mkdir -p resources/grammars/berkeley/$1
 
 head -$1 resources/treebanks/original_treebank_500k.txt > resources/treebanks/$1.txt 

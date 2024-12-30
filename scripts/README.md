@@ -6,14 +6,9 @@ induce_grammar.sh $TREEBANK_SIZE $MERGE_PERCENTAGE $SPLIT_MERGE_CYCLES
 
 Script for generating a corpus from the induced grammar:
 ```
-generate_corpus.sh $GRAMMAR_FILE $OUTPUT_PATH $MIN_LENGTH $MAX_LENGTH $CORPUS_SIZE
-```
-
-Or directly from Python, e.g.:
-```
-python ../src/data_generation/generate.py \
-    -g ../resources/grammars/nltk/2_pcfg.txt \
-    -o ../resources/corpora/2 \
+python src/data_generation/generate.py \
+    -g resources/grammars/nltk/2_pcfg.txt \
+    -o resources/corpora/2 \
     --min_length 3 \
     --max_length 28 \
     --corpus_size 10000 \
@@ -23,8 +18,8 @@ python ../src/data_generation/generate.py \
 Example script for training a MLM:
 ```
 bash train_mlm.sh \
-    --data.data_dir ../resources/corpora/2 \
-    --trainer.output_dir ../resources/models/ \
+    --data.data_dir resources/corpora/2 \
+    --trainer.output_dir resources/models/ \
     --model.hidden_size 16 \
     --model.num_hidden_layers 2 \
     --model.intermediate_size 16 \

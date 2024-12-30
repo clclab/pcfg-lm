@@ -16,6 +16,7 @@ class LanguageConfig(Config):
     allow_duplicates: bool = False
     file: Optional[str] = None
     store_trees: bool = True
+    test_on_unique: bool = False
 
 
 C = TypeVar("C", bound=LanguageConfig)
@@ -60,7 +61,7 @@ class Language(Generic[C]):
         random.shuffle(self.corpus)
         train_ratio, dev_ratio, test_ratio = self.config.split_ratio
 
-        if False: #self.config.allow_duplicates:
+        if self.config.test_on_unique:
             item_distribution = Counter(self.corpus)
             unique_items = list(item_distribution.keys())
 

@@ -8,10 +8,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-g", "--grammar_file", help="Path to NLTK grammar", required=True)
     parser.add_argument("-o", "--output", help="Path to write corpora to", required=True)
-    parser.add_argument("--min_length", help="Minimal sentence length", required=True, type=int)
-    parser.add_argument("--max_length", help="Maximal sentence length", required=True, type=int)
+    parser.add_argument("--min_length", help="Minimal sentence length", default=3, type=int)
+    parser.add_argument("--max_length", help="Maximal sentence length", default=29, type=int)
     parser.add_argument("--corpus_size", help="Total corpus size", required=True, type=int)
-    parser.add_argument("--start_symbol", help="Start symbol in PCFG", default="S_0")
+    parser.add_argument("--start_symbol", help="Start symbol in PCFG", default="ROOT_0")
     parser.add_argument(
         "--split_ratio", 
         help="Train/test/dev split. Defaults to 1.0/0.0/0.0 to only generate train corpus", 
