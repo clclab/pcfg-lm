@@ -83,6 +83,6 @@ if __name__ == "__main__":
     lm_scores = compute_clm_scores(args['corpus'],  args['model_name'], flatten=True)
     pcfg_scores = parse_pcfg_scores(args['pcfg_scores'], flatten=True)
 
-    fig_file = f"{args['corpus']}_{args['model_name']}.png"
+    fig_file = f"corr.png"
     eval_lm_to_pcfg(lm_scores, pcfg_scores, fig_file)
 
