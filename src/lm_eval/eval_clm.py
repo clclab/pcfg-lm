@@ -22,6 +22,9 @@ def compute_clm_scores(eval_corpus_path: str, model_name: str, flatten=False):
     if flatten:
         lm_scores = torch.cat(lm_scores)
 
+    if device == 'cuda':
+        lm_scores = lm_scores.cpu()
+    
     return lm_scores
 
 
