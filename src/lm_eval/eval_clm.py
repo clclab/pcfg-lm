@@ -58,7 +58,10 @@ def eval_lm_to_pcfg(lm_scores: torch.Tensor, pcfg_scores: torch.Tensor, fig_file
     print(rho)
     
     pmin = min(min(lm_scores), min(pcfg_scores))
-    pmax = max(max(lm_scores), max(pcfg_scores))    
+    pmax = max(max(lm_scores), max(pcfg_scores))
+    
+    print(lm_scores)
+    print(pcfg_scores)
     
     plt.figure(figsize=(5,5))
     plt.scatter(lm_scores, pcfg_scores)
