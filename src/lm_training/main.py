@@ -1,6 +1,7 @@
 from transformers import DataCollatorForLanguageModeling
 import wandb
 import os
+import shutil
 import torch
 from pprint import pprint
 from argparser import create_config_dict
@@ -14,48 +15,56 @@ if __name__ == "__main__":
     config_dict = create_config_dict()
     pprint(config_dict)
 
-    is_mlm = config_dict['model']['is_mlm']
+    is_mlm = config_dict["model"]["is_mlm"]
 
-    if config_dict['tokenizer'].get('path') is not None:
-        tokenizer = load_pretrained_tokenizer(config_dict['tokenizer']['path'])
+    shutil.rmtree(config_dict["trainer"]["output_dir"], ignore_errors=True)
+
+    if config_dict["tokenizer"].get("path") is not None:
+        tokenizer = load_pretrained_tokenizer(config_dict["tokenizer"]["path"])
     else:
-        train_corpus_path = os.path.join(config_dict['data']['data_dir'], config_dict['data']['train_file'])
-        tokenizer = create_tokenizer(train_corpus_path, min_freq=config_dict['tokenizer']['min_freq'], add_bos_token=not(is_mlm))
+        train_corpus_path = os.path.join(
+            config_dict["data"]["data_dir"], config_dict["data"]["train_file"]
+        )
+        tokenizer = create_tokenizer(
+            train_corpus_path,
+            min_freq=config_dict["tokenizer"]["min_freq"],
+            add_bos_token=not (is_mlm),
+        )
 
-    datasets = load_data(tokenizer, **config_dict['data'])
+    datasets = load_data(tokenizer, **config_dict["data"])
 
     data_collator = DataCollatorForLanguageModeling(tokenizer, mlm=is_mlm)
 
     model = initialize_model(
-        tokenizer.vocab_size, 
-        **config_dict['model'],
+        tokenizer.vocab_size,
+        **config_dict["model"],
     )
 
     print(model)
-    print('#params', sum(param.numel() for param in model.parameters()))
+    print("#params", sum(param.numel() for param in model.parameters()))
     print(len(tokenizer), "tokens")
 
-    if config_dict['trainer']['report_to'] == 'wandb':
+    if config_dict["trainer"]["report_to"] == "wandb":
         os.environ["WANDB_PROJECT"] = "pcfg-lm"
 
-    push_to_hub = ("hub_model_id" in config_dict['trainer'])
-    if 'hub_token' in config_dict['trainer']:
-        with open(config_dict['trainer']['hub_token']) as f:
-            config_dict['trainer']['hub_token'] = f.read().strip()
+    push_to_hub = "hub_model_id" in config_dict["trainer"]
+    if "hub_token" in config_dict["trainer"]:
+        with open(config_dict["trainer"]["hub_token"]) as f:
+            config_dict["trainer"]["hub_token"] = f.read().strip()
 
     trainer = initialize_trainer(
-        model, 
-        tokenizer, 
-        data_collator, 
-        datasets, 
+        model,
+        tokenizer,
+        data_collator,
+        datasets,
         fp16=torch.cuda.is_available(),
         group_by_length=True,
         auto_find_batch_size=False,
         do_eval=True,
         push_to_hub=push_to_hub,
-        **config_dict['trainer'],
+        **config_dict["trainer"],
     )
-    
+
     trainer.train()
     trainer._save_checkpoint(trainer.model, None)
 
