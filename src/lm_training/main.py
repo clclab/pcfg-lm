@@ -33,6 +33,7 @@ if __name__ == "__main__":
 
     print(model)
     print('#params', sum(param.numel() for param in model.parameters()))
+    print(len(tokenizer), "tokens")
 
     if config_dict['trainer']['report_to'] == 'wandb':
         os.environ["WANDB_PROJECT"] = "pcfg-lm"

@@ -1,7 +1,7 @@
 from tokenizers.trainers import WordLevelTrainer
 from tokenizers import Tokenizer
 from tokenizers.models import WordLevel
-from tokenizers.pre_tokenizers import Whitespace
+from tokenizers.pre_tokenizers import WhitespaceSplit
 from tokenizers.processors import TemplateProcessing
 
 from transformers import PreTrainedTokenizer, BertTokenizer
@@ -21,7 +21,7 @@ def create_tokenizer(
     tokenizer_trainer = WordLevelTrainer(min_frequency=min_freq, special_tokens=special_tokens)
     
     base_tokenizer = Tokenizer(WordLevel(unk_token=unk_token))
-    base_tokenizer.pre_tokenizer = Whitespace()
+    base_tokenizer.pre_tokenizer = WhitespaceSplit()
     
     base_tokenizer.train([corpus], trainer=tokenizer_trainer)
     
