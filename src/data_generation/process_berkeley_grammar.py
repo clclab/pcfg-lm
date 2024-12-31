@@ -122,4 +122,3 @@ if __name__ == "__main__":
         f"{len(grammar_rules)}+{len(lexicon_rules)}={len(formatted_rules)} NLTK rules"
     )
     print("Processed grammar and saved to", args["out"])
-

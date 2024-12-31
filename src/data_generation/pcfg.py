@@ -38,9 +38,9 @@ class PCFG(Language[PCFGConfig]):
         for lhs in grammar._lhs_index.keys():
             lhs_probs = [prod.prob() for prod in grammar.productions(lhs=lhs)]
             grammar._lhs_prob_index[lhs] = lhs_probs
-        
+
         print("Grammar loaded!")
-        
+
         return grammar
 
     def _generate_corpus(self, grammar: nltk_PCFG) -> List[str]:
@@ -58,7 +58,7 @@ class PCFG(Language[PCFGConfig]):
         try:
             if self.config.verbose:
                 print("Generating corpus...")
-    
+
             with tqdm(total=self.config.corpus_size) as pbar:
                 for _ in range(total):
                     tree = generate_tree(grammar, depth=self.config.max_depth)
@@ -67,16 +67,19 @@ class PCFG(Language[PCFGConfig]):
 
                     if self.config.min_length < item_len < self.config.max_length:
                         str_item = " ".join(item)
-                        if not self.config.allow_duplicates and str_item in unique_items:
+                        if (
+                            not self.config.allow_duplicates
+                            and str_item in unique_items
+                        ):
                             continue
 
                         pbar.update(1)
                         str_corpus.append(str_item)
                         unique_items.add(str_item)
-                        
+
                         if self.config.store_trees:
                             self.tree_corpus[str_item] = tree
-    
+
                     if len(str_corpus) >= self.config.corpus_size:
                         return str_corpus
         except KeyboardInterrupt:

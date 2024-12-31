@@ -23,17 +23,15 @@ def load_data(
     train_size: Optional[int] = None,
     dev_size: Optional[int] = None,
     test_size: Optional[int] = None,
-    train_file: str = 'train.txt',
-    dev_file: str = 'dev.txt',
-    test_file: str = 'test.txt',
+    train_file: str = "train.txt",
+    dev_file: str = "dev.txt",
+    test_file: str = "test.txt",
     eval_file: Optional[str] = None,
 ) -> DatasetDict:
     raw_train = load_dataset("text", data_files=os.path.join(data_dir, train_file))[
         "train"
     ]
-    raw_dev = load_dataset("text", data_files=os.path.join(data_dir, dev_file))[
-        "train"
-    ]
+    raw_dev = load_dataset("text", data_files=os.path.join(data_dir, dev_file))["train"]
     raw_test = load_dataset("text", data_files=os.path.join(data_dir, test_file))[
         "train"
     ]

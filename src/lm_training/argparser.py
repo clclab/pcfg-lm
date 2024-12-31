@@ -47,7 +47,9 @@ def _create_arg_parser() -> ArgumentParser:
 
     # TOKENIZER
     parser.add_argument("--tokenizer.path")
-    parser.add_argument("--tokenizer.min_freq", help="Minimum token frequency", type=int, default=5)
+    parser.add_argument(
+        "--tokenizer.min_freq", help="Minimum token frequency", type=int, default=5
+    )
 
     # DATA
     parser.add_argument("--data.data_dir", required=True)

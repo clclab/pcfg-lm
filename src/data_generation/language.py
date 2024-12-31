@@ -30,8 +30,10 @@ class Language(Generic[C]):
         self.grammar = self.create_grammar()
 
         if self.config.file is not None:
-            with open(self.config.file, 'rb') as f:
-                self.corpus, self.tree_corpus, self.pos_dict = pickle.load(self.config.file)
+            with open(self.config.file, "rb") as f:
+                self.corpus, self.tree_corpus, self.pos_dict = pickle.load(
+                    self.config.file
+                )
 
             if self.config.corpus_size and self.config.corpus_size < len(self.corpus):
                 # This allows us to subsample the larger corpus directly for smaller corpus sizes
@@ -48,7 +50,7 @@ class Language(Generic[C]):
         return len(self.train_corpus) + len(self.dev_corpus) + len(self.test_corpus)
 
     def save(self, file_name: str) -> None:
-        with open(filename, 'wb') as f:
+        with open(filename, "wb") as f:
             pickle.dump((self.corpus, self.tree_corpus, self.pos_dict), file_name)
 
     def create_grammar(self) -> Optional[nltk_PCFG]:
