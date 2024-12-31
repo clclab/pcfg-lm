@@ -58,7 +58,7 @@ def eval_lm_to_pcfg(lm_scores: torch.Tensor, pcfg_scores: torch.Tensor, fig_file
         print(len(pcfg_scores)-mask.sum(), "scores are NaN/Inf!")
 
         lm_scores = lm_scores[mask]
-        pcfg_scores pcfg_scores[mask]
+        pcfg_scores = pcfg_scores[mask]
 
     rho = spearmanr(lm_scores, pcfg_scores)
 
