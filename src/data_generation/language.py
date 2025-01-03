@@ -1,6 +1,7 @@
 from collections import Counter
 import pickle
 import random
+import os
 
 from copy import deepcopy
 from typing import Tuple, Optional, TypeVar, Generic, List, Dict
@@ -59,7 +60,7 @@ class Language(Generic[C]):
     def create_corpus(self) -> List[str]:
         raise NotImplementedError
 
-    def split(self):
+    def split(self) -> Tuple[List[str], List[str], List[str]]:
         random.shuffle(self.corpus)
         train_ratio, dev_ratio, test_ratio = self.config.split_ratio
 
@@ -98,4 +99,32 @@ class Language(Generic[C]):
             dev_items = self.corpus[train_split_idx:dev_split_idx]
             test_items = self.corpus[dev_split_idx:test_split_idx]
 
-        return sorted(train_items), dev_items, test_items
+        return train_items, dev_items, test_items
+        
+    def store(self, output: str):
+        if not os.path.exists(output):
+            os.makedirs(output)
+
+        if self.config.split_ratio[0] > 0.0:
+            train_path = os.path.join(output, "train.txt")
+            self.store_corpus(train_path, self.train_corpus)
+
+        if self.config.split_ratio[1] > 0.0:
+            dev_path = os.path.join(output, "dev.txt")
+            self.store_corpus(dev_path, self.dev_corpus)
+
+        if self.config.split_ratio[2] > 0.0:
+            test_path = os.path.join(output, "test.txt")
+            self.store_corpus(test_path, self.test_corpus)
+                
+    def store_corpus(self, path: str, corpus: List[str]):
+        with open(path, "w") as f:
+            f.write("\n".join(corpus))
+        
+        if self.config.store_trees:
+            trees = [self.tree_corpus[sen] for sen in corpus]
+            str_trees = [' '.join(str(tree).split()) for tree in trees]
+            
+            with open(path.replace("txt", "nltk"), "w") as f:
+                f.write('\n'.join(str_trees))
+

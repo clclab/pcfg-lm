@@ -12,7 +12,7 @@ bash scripts/induce_grammar.sh ${TREEBANK_SIZE} ${MERGE_PERCENTAGE} ${SM_CYCLES}
 
 python src/data_generation/generate.py \
     -g resources/grammars/nltk/${TREEBANK_SIZE}_pcfg.txt \
-    -o resources/corpora/${TREEBANK_SIZE} \
+    -o ${DATA_OUTPUT:-resources/corpora/${TREEBANK_SIZE}} \
     --min_length ${MIN_LENGTH:-3} \
     --max_length ${MAX_LENGTH:-30} \
     --corpus_size ${CORPUS_SIZE:-10000} \

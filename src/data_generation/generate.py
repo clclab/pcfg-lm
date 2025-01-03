@@ -48,17 +48,4 @@ if __name__ == "__main__":
     )
 
     lm_language = PCFG(config)
-
-    if not os.path.exists(args["output"]):
-        os.makedirs(args["output"])
-
-    with open(os.path.join(args["output"], "train.txt"), "w") as f:
-        f.write("\n".join(lm_language.train_corpus))
-
-    if split_ratio[1] > 0.0:
-        with open(os.path.join(args["output"], "dev.txt"), "w") as f:
-            f.write("\n".join(lm_language.dev_corpus))
-
-    if split_ratio[2] > 0.0:
-        with open(os.path.join(args["output"], "test.txt"), "w") as f:
-            f.write("\n".join(lm_language.test_corpus))
+    lm_language.store(args["output"])
