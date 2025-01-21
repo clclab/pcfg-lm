@@ -47,6 +47,9 @@ if __name__ == "__main__":
     if config_dict["trainer"]["report_to"] == "wandb":
         os.environ["WANDB_PROJECT"] = "pcfg-lm"
 
+    if ("hub_model_id" in config_dict["trainer"]) and (config_dict["trainer"]["hub_model_id"] == "none"):
+        del config_dict["trainer"]["hub_model_id"]
+
     push_to_hub = "hub_model_id" in config_dict["trainer"]
     if "hub_token" in config_dict["trainer"]:
         with open(config_dict["trainer"]["hub_token"]) as f:

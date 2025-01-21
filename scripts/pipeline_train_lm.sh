@@ -16,7 +16,7 @@ bash scripts/train_clm.sh \
     --model.intermediate_size ${INTERMEDIATE_SIZE:-16} \
     --model.num_attention_heads ${NUM_ATTENTION_HEADS:-2} \
     --trainer.num_train_epochs ${NUM_TRAIN_EPOCHS:-1} \
-    --trainer.hub_model_id test \
+    --trainer.hub_model_id ${HUB_MODEL_ID:-none} \
     --trainer.hub_token hf_token.txt
 
 bash scripts/clm_eval.sh \

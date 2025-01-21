@@ -1,3 +1,5 @@
+import os
+
 from tokenizers.trainers import WordLevelTrainer
 from tokenizers import Tokenizer
 from tokenizers.models import WordLevel
@@ -9,7 +11,7 @@ from transformers import PreTrainedTokenizerFast
 
 
 def create_tokenizer(
-    corpus: str,
+    corpus_path: str,
     unk_token: str = "<unk>",
     pad_token: str = "<pad>",
     mask_token: str = "<mask>",
@@ -17,6 +19,9 @@ def create_tokenizer(
     min_freq: int = 1,
     add_bos_token: bool = False,
 ):
+    if not os.path.exists(corpus_path):
+        raise AssertionError(f'File "{corpus_path}" does not exist') 
+
     special_tokens = [unk_token, pad_token, mask_token, bos_token]
     tokenizer_trainer = WordLevelTrainer(
         min_frequency=min_freq, special_tokens=special_tokens
@@ -25,7 +30,7 @@ def create_tokenizer(
     base_tokenizer = Tokenizer(WordLevel(unk_token=unk_token))
     base_tokenizer.pre_tokenizer = WhitespaceSplit()
 
-    base_tokenizer.train([corpus], trainer=tokenizer_trainer)
+    base_tokenizer.train([corpus_path], trainer=tokenizer_trainer)
 
     print("Tokenizer size:", len(base_tokenizer.get_vocab()))
 
