@@ -1,4 +1,16 @@
 # Scripts for running the whole pipeline
+
+## Pipeline
+The full pipeline, from grammar induction to data generation to model training to evaluation, can be run as follows:
+```
+pipeline.sh TREEBANK_SIZE=10 MERGE_PERCENTAGE=0.9 SM_CYCLES=3
+```
+
+We use a named argument setup of the form `$NAME=$VALUE`, see the `pipeline.sh` script for which arguments can be passed (related to all configuration of the grammar and LM architecture).
+
+`$TREEBANK_SIZE` sets the number of parse trees from the treebank we induce a grammar from, by taking the first `n` trees of the treebank.
+
+## Individual Modules
 Script for grammar induction based on a treebank:
 ```
 induce_grammar.sh $TREEBANK_SIZE $MERGE_PERCENTAGE $SM_CYCLES
