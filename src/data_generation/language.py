@@ -3,6 +3,7 @@ import pickle
 import random
 import os
 
+import datasets
 from copy import deepcopy
 from typing import Tuple, Optional, TypeVar, Generic, List, Dict
 
@@ -100,31 +101,32 @@ class Language(Generic[C]):
             test_items = self.corpus[dev_split_idx:test_split_idx]
 
         return train_items, dev_items, test_items
-        
+
     def store(self, output: str):
         if not os.path.exists(output):
             os.makedirs(output)
 
-        if self.config.split_ratio[0] > 0.0:
-            train_path = os.path.join(output, "train.txt")
-            self.store_corpus(train_path, self.train_corpus)
-
-        if self.config.split_ratio[1] > 0.0:
-            dev_path = os.path.join(output, "dev.txt")
-            self.store_corpus(dev_path, self.dev_corpus)
-
-        if self.config.split_ratio[2] > 0.0:
-            test_path = os.path.join(output, "test.txt")
-            self.store_corpus(test_path, self.test_corpus)
-                
-    def store_corpus(self, path: str, corpus: List[str]):
-        with open(path, "w") as f:
-            f.write("\n".join(corpus))
-        
-        if self.config.store_trees:
-            trees = [self.tree_corpus[sen] for sen in corpus]
-            str_trees = [' '.join(str(tree).split()) for tree in trees]
-            
-            with open(path.replace("txt", "nltk"), "w") as f:
-                f.write('\n'.join(str_trees))
-
+        ds_dict = {}
+        for ratio_ix, split in zip(range(3), ['train', 'dev', 'test']):
+            ratio = self.config.split_ratio[ratio_ix]
+            if ratio > 0.0:
+                if self.config.store_trees:
+                    corpus = getattr(self, f"{split}_corpus")
+                    trees = [self.tree_corpus[sen] for sen in corpus]
+                    str_trees = [' '.join(str(tree).split()) for tree in trees]
+                    ds_dict[split] = datasets.Dataset.from_dict(
+                            {
+                                'text': corpus,
+                                'tree': str_trees,
+                            }
+                        )
+                else:
+                    ds_dict[split] = datasets.Dataset.from_dict(
+                            {
+                                'text': corpus,
+                            }
+                        )
+            else:
+                raise ValueError(f"ratio for {split} is {ratio}")
+        dsd = datasets.DatasetDict(ds_dict)
+        dsd.save_to_disk(output)

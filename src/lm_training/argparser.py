@@ -53,10 +53,6 @@ def _create_arg_parser() -> ArgumentParser:
 
     # DATA
     parser.add_argument("--data.data_dir", required=True)
-    parser.add_argument("--data.train_file", default="train.txt")
-    parser.add_argument("--data.dev_file", default="dev.txt")
-    parser.add_argument("--data.test_file", default="test.txt")
-    parser.add_argument("--data.eval_file", default=None)
     parser.add_argument("--data.train_size", type=int)
     parser.add_argument("--data.dev_size", type=int)
     parser.add_argument("--data.test_size", type=int)

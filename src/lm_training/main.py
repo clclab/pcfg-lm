@@ -3,6 +3,7 @@ import wandb
 import os
 import shutil
 import torch
+import datasets
 from pprint import pprint
 from argparser import create_config_dict
 from data import load_data
@@ -19,20 +20,18 @@ if __name__ == "__main__":
 
     shutil.rmtree(config_dict["trainer"]["output_dir"], ignore_errors=True)
 
+    dsd = datasets.DatasetDict.load_from_disk(config_dict["data"]["data_dir"])
+
     if config_dict["tokenizer"].get("path") is not None:
         tokenizer = load_pretrained_tokenizer(config_dict["tokenizer"]["path"])
     else:
-        train_corpus_path = os.path.join(
-            config_dict["data"]["data_dir"], config_dict["data"]["train_file"]
-        )
         tokenizer = create_tokenizer(
-            train_corpus_path,
+            dsd['train'],
             min_freq=config_dict["tokenizer"]["min_freq"],
             add_bos_token=not (is_mlm),
         )
 
-    datasets = load_data(tokenizer, **config_dict["data"])
-
+    dsd = load_data(tokenizer, dsd)
     data_collator = DataCollatorForLanguageModeling(tokenizer, mlm=is_mlm)
 
     model = initialize_model(
@@ -59,7 +58,7 @@ if __name__ == "__main__":
         model,
         tokenizer,
         data_collator,
-        datasets,
+        dsd,
         fp16=torch.cuda.is_available(),
         group_by_length=True,
         auto_find_batch_size=False,
