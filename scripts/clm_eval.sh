@@ -11,7 +11,8 @@ java \
     -grammar $2 \
     -out $4 \
     -verbose 0 \
-    -thread 1
+    -thread 1 \
+    -root "ROOT_0"
 
 python src/lm_eval/eval_clm.py --model $5 --corpus $3 --pcfg_scores $4
 
