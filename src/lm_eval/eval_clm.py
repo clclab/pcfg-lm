@@ -53,9 +53,12 @@ def parse_pcfg_scores(path: str, flatten=False):
 def eval_lm_to_pcfg(lm_scores: torch.Tensor, pcfg_scores: torch.Tensor, fig_file: str):
     assert len(lm_scores) == len(pcfg_scores), f"{len(lm_scores)} != {len(pcfg_scores)}"
 
+    print(lm_scores[:30])
+    print(pcfg_scores[:30])
+    
     mask = torch.isfinite(pcfg_scores)
     if mask.sum() < len(pcfg_scores):
-        print(len(pcfg_scores)-mask.sum(), "scores are NaN/Inf!")
+        print(len(pcfg_scores)-mask.sum(), "out of", len(pcfg_scores), "scores are NaN/Inf!")
 
         lm_scores = lm_scores[mask]
         pcfg_scores = pcfg_scores[mask]
@@ -67,8 +70,8 @@ def eval_lm_to_pcfg(lm_scores: torch.Tensor, pcfg_scores: torch.Tensor, fig_file
     pmin = min(min(lm_scores), min(pcfg_scores))
     pmax = max(max(lm_scores), max(pcfg_scores))
 
-    print(lm_scores)
-    print(pcfg_scores)
+    print(lm_scores.mean(), lm_scores)
+    print(pcfg_scores.mean(), pcfg_scores)
 
     plt.figure(figsize=(5, 5))
     plt.scatter(lm_scores, pcfg_scores)
