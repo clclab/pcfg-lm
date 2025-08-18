@@ -5,11 +5,16 @@ import os
 
 import datasets
 from copy import deepcopy
+from dotenv import load_dotenv
+from pathlib import Path
 from typing import Tuple, Optional, TypeVar, Generic, List, Dict
 
 from nltk import Tree, PCFG as nltk_PCFG
 
 from config import Config
+
+
+load_dotenv()
 
 
 class LanguageConfig(Config):
@@ -18,6 +23,7 @@ class LanguageConfig(Config):
     allow_duplicates: bool = False
     file: Optional[str] = None
     store_trees: bool = True
+    store_raw_test: bool = True
     test_on_unique: bool = False
 
 
@@ -26,7 +32,8 @@ C = TypeVar("C", bound=LanguageConfig)
 
 class Language(Generic[C]):
     def __init__(self, config: C):
-        assert sum(config.split_ratio) == 1.0, "train/dev/test split does not add to 1"
+        split_sum = sum(config.split_ratio)
+        assert split_sum == 1.0, f"train/dev/test split does not add to 1: {split_sum}"
 
         self.config = config
         self.grammar = self.create_grammar()
@@ -102,7 +109,7 @@ class Language(Generic[C]):
 
         return train_items, dev_items, test_items
 
-    def store(self, output: str):
+    def store(self, output: str, hf_path: Optional[str] = None):
         if not os.path.exists(output):
             os.makedirs(output)
 
@@ -110,23 +117,34 @@ class Language(Generic[C]):
         for ratio_ix, split in zip(range(3), ['train', 'dev', 'test']):
             ratio = self.config.split_ratio[ratio_ix]
             if ratio > 0.0:
+                corpus = getattr(self, f"{split}_corpus")
                 if self.config.store_trees:
-                    corpus = getattr(self, f"{split}_corpus")
                     trees = [self.tree_corpus[sen] for sen in corpus]
                     str_trees = [' '.join(str(tree).split()) for tree in trees]
                     ds_dict[split] = datasets.Dataset.from_dict(
-                            {
-                                'text': corpus,
-                                'tree': str_trees,
-                            }
-                        )
+                        {
+                            'text': corpus,
+                            'tree': str_trees,
+                        }
+                    )
                 else:
                     ds_dict[split] = datasets.Dataset.from_dict(
-                            {
-                                'text': corpus,
-                            }
-                        )
+                        {
+                            'text': corpus,
+                        }
+                    )
             else:
                 raise ValueError(f"ratio for {split} is {ratio}")
         dsd = datasets.DatasetDict(ds_dict)
+
         dsd.save_to_disk(output)
+
+        if self.config.store_raw_test:
+            with open(Path(output) / "test.txt", "w") as f:
+                f.write("\n".join(dsd["test"]["text"]))
+        
+        if hf_path is not None:
+            dsd.push_to_hub(
+                hf_path,
+                token=os.getenv("HF_TOKEN"),
+            )

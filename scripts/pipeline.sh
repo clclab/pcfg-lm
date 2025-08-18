@@ -8,15 +8,17 @@ do
    export "$KEY"="$VALUE"
 done
 
-bash scripts/induce_grammar.sh ${TREEBANK_SIZE} ${MERGE_PERCENTAGE} ${SM_CYCLES}
+# bash scripts/induce_grammar.sh ${TREEBANK_SIZE} ${MERGE_PERCENTAGE} ${SM_CYCLES}
 
 python src/data_generation/generate.py \
     -g resources/grammars/nltk/${TREEBANK_SIZE}_pcfg.txt \
     -o ${DATA_OUTPUT:-resources/corpora/${TREEBANK_SIZE}} \
+    --hf_path "amsterdamNLP/transparency_${TREEBANK_SIZE}" \
     --min_length ${MIN_LENGTH:-3} \
     --max_length ${MAX_LENGTH:-30} \
     --corpus_size ${CORPUS_SIZE:-10000} \
-    --split_ratio ${SPLIT_RATIO:-0.8/0.1/0.1}
+    --split_ratio ${SPLIT_RATIO:-0.8/0.1/0.1} \
+    --store_trees
     
 bash scripts/train_clm.sh \
     --data.data_dir resources/corpora/$TREEBANK_SIZE \
@@ -27,7 +29,6 @@ bash scripts/train_clm.sh \
     --model.num_attention_heads ${NUM_ATTENTION_HEADS:-2} \
     --trainer.num_train_epochs ${NUM_TRAIN_EPOCHS:-1} \
     --trainer.hub_model_id ${HUB_MODEL_ID:-none} \
-    --trainer.hub_token hf_token.txt
 
 bash scripts/clm_eval.sh \
     resources/grammars/nltk/${TREEBANK_SIZE}_pcfg.txt \

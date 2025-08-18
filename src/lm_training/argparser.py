@@ -61,7 +61,7 @@ def _create_arg_parser() -> ArgumentParser:
     parser.add_argument("--trainer.output_dir", required=True)
     parser.add_argument("--trainer.per_device_train_batch_size", type=int, default=64)
     parser.add_argument("--trainer.per_device_eval_batch_size", type=int, default=64)
-    parser.add_argument("--trainer.evaluation_strategy", default="steps")
+    parser.add_argument("--trainer.eval_strategy", default="steps")
     parser.add_argument("--trainer.eval_steps", type=int, default=100)
     parser.add_argument("--trainer.logging_steps", type=int, default=100)
     parser.add_argument("--trainer.save_steps", type=int, default=100000000)
@@ -73,6 +73,7 @@ def _create_arg_parser() -> ArgumentParser:
     parser.add_argument("--trainer.learning_rate", type=float, default=5e-4)
     parser.add_argument("--trainer.report_to", default="none")
     parser.add_argument("--trainer.hub_model_id", default=None)
+    parser.add_argument("--trainer.hub_token", default=None)
 
     return parser
 

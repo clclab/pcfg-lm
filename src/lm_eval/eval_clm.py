@@ -1,5 +1,6 @@
 from typing import List
 import argparse
+import os
 
 from scipy.stats import spearmanr
 import matplotlib.pyplot as plt
@@ -9,13 +10,13 @@ from transformers import AutoModelForCausalLM
 from minicons import scorer
 
 
-def compute_clm_scores(eval_corpus_path: str, model_name: str, flatten=False):
+def compute_clm_scores(corpus_path: str, model_name: str, flatten=False, split="test"):
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     ilm_model = scorer.IncrementalLMScorer(model_name, device)
 
-    with open(eval_corpus_path) as f:
-        eval_corpus = f.read().strip().split("\n")
+    with open(corpus_path) as f:
+        eval_corpus = f.read().split("\n")
 
     lm_scores = ilm_model.sequence_score(eval_corpus, reduction=lambda x: x)
 
@@ -53,9 +54,6 @@ def parse_pcfg_scores(path: str, flatten=False):
 def eval_lm_to_pcfg(lm_scores: torch.Tensor, pcfg_scores: torch.Tensor, fig_file: str):
     assert len(lm_scores) == len(pcfg_scores), f"{len(lm_scores)} != {len(pcfg_scores)}"
 
-    print(lm_scores[:30])
-    print(pcfg_scores[:30])
-    
     mask = torch.isfinite(pcfg_scores)
     if mask.sum() < len(pcfg_scores):
         print(len(pcfg_scores)-mask.sum(), "out of", len(pcfg_scores), "scores are NaN/Inf!")
@@ -65,13 +63,8 @@ def eval_lm_to_pcfg(lm_scores: torch.Tensor, pcfg_scores: torch.Tensor, fig_file
 
     rho = spearmanr(lm_scores, pcfg_scores)
 
-    print(rho)
-
     pmin = min(min(lm_scores), min(pcfg_scores))
     pmax = max(max(lm_scores), max(pcfg_scores))
-
-    print(lm_scores.mean(), lm_scores)
-    print(pcfg_scores.mean(), pcfg_scores)
 
     plt.figure(figsize=(5, 5))
     plt.scatter(lm_scores, pcfg_scores)
@@ -92,7 +85,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("-m", "--model_name", help="Path saved LM", required=True)
     parser.add_argument(
-        "-p", "--pcfg_scores", help="Path saved extracted PCFG scores", required=True
+        "-p", "--pcfg_scores", help="Path to the extracted PCFG scores", required=True
     )
 
     args = vars(parser.parse_args())

@@ -13,6 +13,9 @@ if __name__ == "__main__":
         "-o", "--output", help="Path to write corpora to", required=True
     )
     parser.add_argument(
+        "--hf_path", help="HF dataset name", default=None
+    )
+    parser.add_argument(
         "--min_length", help="Minimal sentence length", default=3, type=int
     )
     parser.add_argument(
@@ -48,4 +51,4 @@ if __name__ == "__main__":
     )
 
     lm_language = PCFG(config)
-    lm_language.store(args["output"])
+    lm_language.store(args["output"], args["hf_path"])

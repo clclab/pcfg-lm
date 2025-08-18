@@ -1,10 +1,13 @@
-from transformers import DataCollatorForLanguageModeling
-import wandb
 import os
 import shutil
-import torch
-import datasets
 from pprint import pprint
+
+import datasets
+import torch
+import wandb
+from dotenv import load_dotenv
+from transformers import DataCollatorForLanguageModeling
+
 from argparser import create_config_dict
 from data import load_data
 from model import initialize_model
@@ -13,6 +16,8 @@ from trainer import initialize_trainer
 
 
 if __name__ == "__main__":
+    load_dotenv()
+
     config_dict = create_config_dict()
     pprint(config_dict)
 
@@ -50,9 +55,8 @@ if __name__ == "__main__":
         del config_dict["trainer"]["hub_model_id"]
 
     push_to_hub = "hub_model_id" in config_dict["trainer"]
-    if "hub_token" in config_dict["trainer"]:
-        with open(config_dict["trainer"]["hub_token"]) as f:
-            config_dict["trainer"]["hub_token"] = f.read().strip()
+    if config_dict["trainer"].get("hub_token") is None:
+        config_dict["trainer"]["hub_token"] = os.getenv("HF_TOKEN")
 
     trainer = initialize_trainer(
         model,
